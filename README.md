@@ -6,7 +6,7 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 
 ## Current features
 
-# S-300PMU-1 (SA-20 Gargoyle) Complex
+# S-300PMU-1 (SA-20A Gargoyle) Complex
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.
 All components labelled as SA-20 in the mission editor. ABM-optimized missiles coming soon!
 
