@@ -1,0 +1,17 @@
+48N6
+
+48h6e2
+
+
+Name: 48N6
+Type: Long-range, radio command guidance + TVM, 
+surface-to-air-missile for S-300PMU1
+Developed: Russia
+Guidance: Semi-active radar
+Warhead weight, kg: 100
+Weight, kg: 1800
+G limit: 25
+Length, m: 7.0
+Body diameter, m: 0.519
+Range, km: 90
+Maximum Mach number: 6.6

@@ -1,0 +1,10 @@
+Buk 9A310M1-2 ln
+
+9a310m1
+
+
+Name: 9A310M1-2 "Buk-M1-2" (SA-17)
+Type: Low-to High-Altitude SAM
+Reaction time: 26 s
+Combat weight: 32340 kg
+Armament: 4x SA-17 (9M317) missiles

@@ -1,0 +1,31 @@
+S-300PMU 5P85D LN
+SAM/S-300PS 5P85D ln.png
+5p85d
+
+
+Name: S-300PMU 5P85D (SA-20)
+Type: Low-to High-Altitude SAM
+Additional Missile Launcher Vehicle
+Chassis: MAZ-7910 (8x8)
+Length: 9.4 m
+Height: 3.7 m
+Width: 3.1 m
+Combat weight: 20 000 kg
+Crew: 4
+Engine: D12A-525 V-12 diesel 525 hp
+Operational range: 650 km
+Max road speed: 60 km/h
+
+Armament: 4 SA-10 (48N6E) missile
+
+Max speed: Mach 6
+Rate of fire: 1 missile/3 s.
+Min effective range: not available
+Max effective range:
+(target altitude 2000 m plus) 90 000 m
+(target altitude 25 m and below) 40 000 m
+Min effective altitude: 25 m
+Max effective altitude: 30 000 m
+Warhead: 100 kg HE
+Launch weight: 1,480 kg
+Max target speed: 1167 m/s

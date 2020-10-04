@@ -1,0 +1,17 @@
+9M317
+
+9m38m1
+
+
+Name: 9M317
+Type: Medium-range, SARH, surface-to-air-
+missile for BUK
+Developed: Russia
+Guidance: Semi-active radar
+Warhead weight, kg: 70
+Weight, kg: 710
+G limit: 24
+Length, m: 5.55
+Body diameter, m: 0.4
+Range, km: 50
+Maximum Mach number: 4
