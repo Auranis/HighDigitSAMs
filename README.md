@@ -1,6 +1,9 @@
 ### HighDigitSAMs
 A simple, IC-compliant mod for DCS to add more modern SAM systems to the game.
 
+## How to Install
+Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use OVGME to install the files there.
+
 ## Current features
 
 # S-300PMU-1 (SA-20 Gargoyle) Complex
@@ -15,3 +18,7 @@ Available in the mission editor via the dedicated SA-10 (5V55RUD) launchers.
 # 9K317 Buk-M1-2 (SA-17 Grizzly) Transporter/Erector/Launcher and Radar, 9A310M1-2
 This upgraded Buk TELAR carries a more capable radar, and fires the 9M317 missiles, which is longer-ranged and more agile than the original 9M38 Buk missile.
 This variant has an improved ability to defend itself from anti-radiation missiles. ABM capability and support units coming to the complex soon!
+
+## Version history
+
+V 1.0.0 2020-10-3 - Initial release
