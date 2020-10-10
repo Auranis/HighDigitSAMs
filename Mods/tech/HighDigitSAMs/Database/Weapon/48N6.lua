@@ -28,12 +28,12 @@ local SA48N6 = {
 	display_name = _('48N6 (SA-20 Gargoyle)'),
 	name = "SA48N6",
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
-	Head_Type = 6, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
+	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma = {40, 40, 40}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
 	M = 1800.0, -- Mass of the missile at launch
 	H_max = 27000.0, -- Maximum target altitude
 	H_min = 10.0, -- minimum target altitude
-	Diam = 519.0, -- Missile diameter in cm
+	Diam = 519.0, -- Missile diameter in mm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
 	D_max = 55000.0, -- Maximum range firing at low altitude, in meters
 	D_min = 5000.0, -- minimum range in meters
@@ -61,7 +61,7 @@ local SA48N6 = {
 	Reflection = 0.2,
 	KillDistance = 25.0,
 	category = CAT_MISSILES,
-	ccm_k0       = 0.5,
+	ccm_k0       = 0.5, -- Countermeasures effectiveness
     PN_coeffs = {
         4,                 -- Number of Entries
         2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
