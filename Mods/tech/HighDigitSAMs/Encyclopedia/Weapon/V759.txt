@@ -1,0 +1,17 @@
+V759
+
+S_75_Rocket
+
+
+Name: V759 (SA-2E)
+Type: Medium-range, radio command guidance, 
+surface-to-air-missile for S-75
+Developed: Russia
+Guidance: Semi-active radar
+Warhead weight, kg: 200
+Weight, kg: 2406
+G limit: 9
+Length, m: 10.8
+Body diameter, m: 0.5
+Range, km: 56
+Maximum Mach number: 3.7

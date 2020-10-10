@@ -10,6 +10,10 @@ info		  =    _("Adds support for various modern SAMs to DCS world, including the
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
 
+-- mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
+-- mount_vfs_model_path    (current_mod_path ..  "/Shapes")
+-- mount_vfs_texture_path	(current_mod_path ..  "/Textures/S_75_Rocket2")
+
 
 local function vehicle_file(f)
 	if dofile(current_mod_path..f) then
@@ -47,17 +51,26 @@ local function weapon_file(f)
 end
 
 --Russia
+dofile(current_mod_path.."/Database/Sensors/sensors.lua")
 weapon_file("/Database/Weapon/5V55RUD.lua")
 weapon_file("/Database/Weapon/48N6.lua")
 weapon_file("/Database/Weapon/9M317.lua")
+weapon_file("/Database/Weapon/5V23.lua")
+weapon_file("/Database/Weapon/5V27.lua")
+weapon_file("/Database/Weapon/HQ2.lua")
 vehicle_file("/Database/Vehicle/radar/40B6M S-300PMU1 TR.lua")
 vehicle_file("/Database/Vehicle/radar/40B6MD S-300PMU1 SR.lua")
 vehicle_file("/Database/Vehicle/radar/64H6E S-300PMU1 SR.lua")
+-- vehicle_file("/Database/Vehicle/radar/Fan Song.lua")
+-- vehicle_file("/Database/Vehicle/radar/HQ-2 TR ZD-2.lua")
 vehicle_file("/Database/Vehicle/5P85CE S-300PMU1 LN.lua")
 vehicle_file("/Database/Vehicle/5P85DE S-300PMU1 LN.lua")
 vehicle_file("/Database/Vehicle/5P85CE S-300PS LN.lua")
 vehicle_file("/Database/Vehicle/5P85DE S-300PS LN.lua")
 vehicle_file("/Database/Vehicle/9A310M1-2 BUK LN.lua")
+vehicle_file("/Database/Vehicle/V759 Launcher.lua")
+vehicle_file("/Database/Vehicle/HQ-2 Launcher.lua")
+vehicle_file("/Database/Vehicle/5P73 V-601P LN.lua")
 vehicle_file("/Database/Vehicle/S-300PMU1 CP 54K6.lua")
 ---------------------------------------------------------
 plugin_done()
