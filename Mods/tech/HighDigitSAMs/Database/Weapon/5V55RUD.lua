@@ -25,26 +25,26 @@ end
 
 local SA5V55RUD = {
 	Name = SA5V55RUD, --5V55RUD
-	display_name = _('5V55RUD (SA-10D Growler)'),
+	display_name = _('5V55RUD (SA-10D Grumble)'),
 	name = "SA5V55RUD",
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
 	Head_Type = 6, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma = {50, 50, 50}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
 	M = 1480.0, -- Mass of the missile at launch
-	H_max = 30000.0, -- Maximum target altitude
+	H_max = 25000.0, -- Maximum target altitude
 	H_min = 10.0, -- minimum target altitude
 	Diam = 458.0, -- Missile diameter in cm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
-	D_max = 40000.0, -- Maximum range firing at low altitude, in meters
+	D_max = 25000.0, -- Maximum range firing at low altitude, in meters
 	D_min = 5000.0, -- minimum range in meters
 	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
 	Life_Time = 200.0, -- Battery life
-	Nr_max = 25, -- Maximum g when turning
+	Nr_max = 18, -- Maximum g when turning
 	v_min = 0.0, -- Minimum speed in m/s
 	v_mid = 1000.0, -- average speed in m/s
-	Mach_max = 6.5, -- maximum Mach of the missile
+	Mach_max = 7, -- maximum Mach of the missile, needs headroom to account for G and drag
 	t_b = 0.0, -- Motor start delay
-	t_acc = 25.0, -- motor burn time
+	t_acc = 11.0, -- motor burn time
 	t_marsh = 0.0, -- cruise time, 0.0 if not applicable
 	Range_max = 90000.0, -- Max range in meters
 	H_min_t = 10.0, -- minimum target height above the terrain, m.

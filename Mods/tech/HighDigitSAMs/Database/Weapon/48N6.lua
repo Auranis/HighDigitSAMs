@@ -35,17 +35,17 @@ local SA48N6 = {
 	H_min = 10.0, -- minimum target altitude
 	Diam = 519.0, -- Missile diameter in mm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
-	D_max = 55000.0, -- Maximum range firing at low altitude, in meters
+	D_max = 30000.0, -- Maximum range firing at low altitude, in meters
 	D_min = 5000.0, -- minimum range in meters
 	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
-	Life_Time = 200.0, -- Battery life
+	Life_Time = 120.0, -- Battery life
 	Nr_max = 25, -- Maximum g when turning
 	v_min = 50.0, -- Minimum speed in m/s
 	v_mid = 1000.0, -- average speed in m/s
-	Mach_max = 7.5, -- maximum Mach of the missile. In DCS this seems to assume the missile is not subject to drag, so a little headroom is necessary
+	Mach_max = 6.7, -- maximum Mach of the missile. In DCS this seems to assume the missile is not subject to drag, so a little headroom is necessary
 	t_b = 0.0, -- Motor start delay
-	t_acc = 25.0, -- motor burn time
-	t_marsh = 0.0, -- cruise time, 0.0 if not applicable
+	t_acc = 10.0, -- motor burn time
+	t_marsh = 15.0, -- cruise time, 0.0 if not applicable
 	Range_max = 150000.0, -- Max range in meters
 	H_min_t = 10.0, -- minimum target height above the terrain, m.
 	Fi_start = 3.14152, -- angle of tracking and sighting at launch, in radians
@@ -61,7 +61,7 @@ local SA48N6 = {
 	Reflection = 0.2,
 	KillDistance = 25.0,
 	category = CAT_MISSILES,
-	ccm_k0       = 0.5, -- Countermeasures effectiveness
+	ccm_k0       = 0.2, -- Countermeasures effectiveness
     PN_coeffs = {
         4,                 -- Number of Entries
         2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
@@ -73,7 +73,7 @@ local SA48N6 = {
 	shape_table_data = 
 	{
 		{
-			name	 = "48H6E2";
+			name	 = "48N6";
 			file  	 = "48H6E2";
 			life  	 = 1;
 			fire  	 = { 0, 1};

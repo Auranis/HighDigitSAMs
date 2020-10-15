@@ -52,7 +52,7 @@ TOMB_STONE =
             {
                 radial_velocity_min = 10.0,
             },
-            scan_period = 1.0,
+            scan_period = 0.1,
         }
 
 declare_sensor(TOMB_STONE)
