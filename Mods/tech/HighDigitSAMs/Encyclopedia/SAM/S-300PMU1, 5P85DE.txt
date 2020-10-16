@@ -1,9 +1,9 @@
-S-300PMU 5P85D LN
+S-300PMU-1 5P85DE LN
 SAM/S-300PS 5P85D ln.png
 5p85d
 
 
-Name: S-300PMU 5P85D (SA-20)
+Name: S-300PMU-1 5P85DE (SA-20A Gargoyle)
 Type: Low-to High-Altitude SAM
 Additional Missile Launcher Vehicle
 Chassis: MAZ-7910 (8x8)
@@ -16,16 +16,16 @@ Engine: D12A-525 V-12 diesel 525 hp
 Operational range: 650 km
 Max road speed: 60 km/h
 
-Armament: 4 SA-10 (48N6E) missile
+Armament: 4 SA-20 (48N6) missiles
 
 Max speed: Mach 6
 Rate of fire: 1 missile/3 s.
 Min effective range: not available
 Max effective range:
 (target altitude 2000 m plus) 90 000 m
-(target altitude 25 m and below) 40 000 m
+(target altitude 25 m and below) 30 000 m
 Min effective altitude: 25 m
 Max effective altitude: 30 000 m
-Warhead: 100 kg HE
-Launch weight: 1,480 kg
-Max target speed: 1167 m/s
+Warhead: 130 kg HE
+Launch weight: 1,800 kg
+Max target speed: 2800 m/s

@@ -1,0 +1,19 @@
+S-300PMU-1 64H6E SR
+SAM/S-300PS 64H6E sr.png
+64h6e
+
+
+Name: S-300PMU-1 64H6E (SA-20A Gargolye)
+Reporting Name: BIG BIRD
+Type: Low-to High-Altitude SAM Long-range surveillance radar
+Detection range: 300 km
+Max number of target tracks: 100
+Tracking rate: 5 rpm
+Time into action/time to close down: 5 min
+Chassis: MAZ-7410 (8x8)
+Engine: D12A-525 V-12 diesel 525 hp
+Length: 20.2 m
+Width: 5.75 m
+Height: 8.68 m
+Max road speed: 60 km/h
+Fuel distance: 650 km

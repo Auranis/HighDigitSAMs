@@ -1,0 +1,17 @@
+9M83M
+
+9m83m
+
+
+Name: 9M83M (SA-23A Gladiator)
+Type: Long-range, radio command guidance + TVM, 
+anti-ballistic/anti-aircraft missile for S-300VM
+Developed: Russia
+Guidance: radio command
+Warhead weight, kg: 150
+Weight, kg: 2275 kg
+G limit: 30
+Length, m: 7.9
+Body diameter, m: 0.9
+Range, km: 100
+Maximum Mach number: 6.5

@@ -1,0 +1,13 @@
+S-300VM 9S15ME SR
+
+9s15m2
+
+
+Name: S-300VM 9S15ME (SA-23)
+Reporting Name: BILL BOARD
+Type: Low-to High-Altitude SAM Acquisition radar
+Detection range: 300 km
+Max number of target tracks: 200
+Tracking rate: 5 rpm
+Time into action/time to close down: 5 min
+Chassis: Article 830 (tracked)

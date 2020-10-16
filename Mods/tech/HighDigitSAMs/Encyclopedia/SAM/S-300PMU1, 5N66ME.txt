@@ -1,0 +1,22 @@
+S-300PMU-1 5N66M SR
+Radar/S-300PS 40V6MD sr.png
+40b6md
+
+
+Name: S-300PMU-1 5N66ME (SA-20A Gargoyle)
+Type: Low-to High-Altitude SAM
+Surveillance Radar
+Radar detection range:
+(max range (target at 500 m) 90 km
+(max range (target at 1000 m) 120 km
+Max number of target tracks: 180
+Radar accuracy:
+(range) 250m
+(azimuth/elevation) 0.3°
+(velocity) 2.4 m/s
+Time into action/time to close down: 120 min
+Chassis: MAZ-7910 (8x8)
+Engine: D12A-525 V-12 diesel 525 hp
+Length: 20.3 m
+Width: 18.2 m
+Height: 42.3 m

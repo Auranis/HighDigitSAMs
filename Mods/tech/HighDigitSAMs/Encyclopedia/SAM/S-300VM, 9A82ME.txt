@@ -1,0 +1,24 @@
+S-300VM 9A82ME ln
+
+9a82me
+
+
+Name: 9A82ME "Antey-2500" (SA-23B Giant)
+Type: High-Altitude SAM/ABM
+Reaction Time: 7.5s
+Combat Weight: 47 000 kg
+
+Armament: 2x SA-23B (9M82M) missiles
+
+Max speed: Mach 8
+Rate of fire: 1 missile/1.5 s.
+Min effective range: not available
+Max effective range:
+(ballistic missile target) 40 000 m
+(target altitude 10000 m plus) 200 000 m
+(target altitude 1000 m) 14 000 m
+Min effective altitude: 1000 m
+Max effective altitude: 30 000 m
+Warhead: 150 kg HE
+Launch weight: 4,635 kg
+Max target speed: 4,500 m/s

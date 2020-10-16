@@ -1,0 +1,17 @@
+9M82M
+
+9m82m
+
+
+Name: 9M82M (SA-23B Giant)
+Type: Long-range, radio command guidance + TVM, 
+anti-ballistic/anti-aircraft missile for S-300VM
+Developed: Russia
+Guidance: radio command
+Warhead weight, kg: 150
+Weight, kg: 4635 kg
+G limit: 30
+Length, m: 9.9
+Body diameter, m: 1.2
+Range, km: 200
+Maximum Mach number: 8
