@@ -5,7 +5,7 @@ displayName   = _("High Digit SAMs"),
 shortName	  =   "HighDigitSAMs",
 state		 	  = "installed",
 developerName	  = "E. 'Wiki' Crouch",
-version		 	  = __DCS_VERSION__,	
+version		 	  = "1.1.0",	
 info		  =    _("Adds support for various modern SAMs to DCS world, including the S-300PMU1."),	 
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })

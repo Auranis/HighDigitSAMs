@@ -179,7 +179,7 @@ GT.Name = "SA-17 Buk M1-2 LN 9A310M1-2";
 GT.DisplayName = _("SAM SA-17 Buk M1-2 LN 9A310M1-2");
 GT.Rate = 70;
 
-GT.Sensors = { OPTIC = {"Karat visir"}, RADAR = {"SA-11 Buk TR"}};
+GT.Sensors = { OPTIC = {"Karat visir"}, RADAR = {"SA-17 Buk TR"}};
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = GT.WS[3].LN[1].distanceMax;

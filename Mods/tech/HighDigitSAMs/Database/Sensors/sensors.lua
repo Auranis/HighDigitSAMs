@@ -22,6 +22,42 @@ local OPTIC_SENSOR_TV = 0
 local OPTIC_SENSOR_LLTV = 1
 local OPTIC_SENSOR_IR = 2
 
+-- Buk-M1-2 SENSORS
+
+CHAIR_BACK = 
+		{
+			Name = "SA-17 Buk TR",
+			category = SENSOR_RADAR,
+			type = RADAR_AS,
+            scan_volume =
+            {
+                azimuth = {-180.0, 180.0},
+                elevation = {-15.0, 60.0}
+            },
+            max_measuring_distance = 120000.0,
+            detection_distance =
+            {
+                [HEMISPHERE_UPPER] =
+                {
+                    [ASPECT_HEAD_ON] = 120000.0,
+                    [ASPECT_TAIL_ON] = 120000.0
+                },
+                [HEMISPHERE_LOWER] =
+                {
+                    [ASPECT_HEAD_ON] = 120000.0,
+                    [ASPECT_TAIL_ON] = 120000.0
+                }
+            },
+            lock_on_distance_coeff = 0.5,
+            velocity_limits =
+            {
+                radial_velocity_min = 10,
+            },
+            scan_period = 1.0,
+		}
+		
+declare_sensor(CHAIR_BACK)
+
 
 -- S-300PMU1 SENSORS
 
