@@ -51,6 +51,6 @@ Selectable in the mission editor as the SAM SA-14 Strela-3.
 
 ## Version history  
 
-V 1.2.0 2020-10-31 - Kinematics updates to missiles, added 9K338 and 9K34, added truck mount for 30N6 radar  
+V 1.2.0 2020-10-31 - Kinematics updates to missiles, added S-300VM, 9K338 and 9K34, added truck mount for 30N6 radar  
 V 1.1.0 2020-10-10 - Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
 V 1.0.0 2020-10-3 - Initial release  
