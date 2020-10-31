@@ -39,6 +39,15 @@ This Chinese-developed copy of the S-75 makes a number of upgrades to its perfor
 Note: Associated radar systems not included until I can figure out a way to add RWR symbology without breaking IC.  
 Add to your SA-2 complex by selecting the HQ-2 launcher in the mission editor, available to China, Iran, and CJTF Red.  
 
+### 9K338 Igla-S (SA-24) MANPADS
+The 9K338 system features significant kinematic and countermeasure resistance improvements from the previous 9K38 Igla. It fires the 9M342 missile which has an average speed of 650 meters per second.  
+Selectable in the mission editor as the SAM SA-24 Igla-S.  
+
+### 9K34 Strela-3 (SA-14) MANPADS
+The 9K34 system was a major improvement over the previous 9K32 Strela-2, featuring a limited all-aspect engagement capability and improved fusing.  
+It saw service around the world from the late 1970s onward.  
+Selectable in the mission editor as the SAM SA-14 Strela-3.  
+
 ## Version history  
 
 V 1.1.0 2020-10-10 - Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
