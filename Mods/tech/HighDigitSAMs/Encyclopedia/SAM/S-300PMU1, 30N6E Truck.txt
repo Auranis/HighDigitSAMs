@@ -1,0 +1,14 @@
+S-300PMU-1 30N6E TR
+Radar/S-300PS 40V6M tr.png
+30h6_truck
+
+
+Name: S-300PMU-1 30N6E (SA-20A Gargoyle)
+Reporting Name: TOMB STONE
+Type: Low-to High-Altitude SAM Multifunction radar
+Time into action/time to close down: 5 min
+Chassis: MAZ-7910 (8x8)
+Engine: D12A-525 V-12 diesel 525 hp
+Length: 20.3 m
+Width: 18.2 m
+Height: 27.7 m

@@ -10,10 +10,11 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.  
 All components labelled as SA-20 in the mission editor. ABM-optimized missiles coming soon!  
 The complex can also accommodate launchers for the 5V55RUD missiles.  
+Now includes a truck-mounted 30N6 radar, 3D model by EKO.
 
 ### S-300VM (SA-23 Gladiator/Giant) Complex (contributed by LetMePickThat)
-This upgraded variant of the S-300V features Track-Via-Missile guidance and the extremely capable 9M82M anti-ballstic missile, in addition to the 9M83M missile, all on a tracked chassis.  
-All components labelled as SA-23 in the mission editor, complete with custom 3D models.  
+This upgraded variant of the S-300V features Track-Via-Missile guidance and the extremely capable 9M82M anti-ballstic missile, in addition to the 9M83M missile, all on a tracked chassis.    
+All components labelled as SA-23 in the mission editor, complete with custom 3D models created by EKO.  
 
 ### 5V55RUD Missile for the S-300PS (SA-10c) complex  
 This upgraded missile has improved guidance from the original 5V55R, increasing its effective range vs. aircraft significantly.  
