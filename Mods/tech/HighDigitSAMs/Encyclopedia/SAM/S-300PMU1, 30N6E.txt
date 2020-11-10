@@ -1,6 +1,6 @@
 S-300PMU-1 30N6E TR (40B6 mount)
 Radar/S-300PS 40V6M tr.png
-40b6m
+40b6m_mast
 
 
 Name: S-300PMU-1 30N6E (SA-20A Gargoyle)

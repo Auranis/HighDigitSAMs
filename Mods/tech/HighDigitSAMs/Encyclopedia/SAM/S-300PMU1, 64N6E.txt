@@ -1,6 +1,6 @@
 S-300PMU-1 64H6E SR
 SAM/S-300PS 64H6E sr.png
-64h6e
+64n6
 
 
 Name: S-300PMU-1 64H6E (SA-20A Gargolye)

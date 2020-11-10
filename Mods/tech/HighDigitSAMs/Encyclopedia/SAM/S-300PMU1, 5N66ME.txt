@@ -1,6 +1,6 @@
 S-300PMU-1 5N66M SR
 Radar/S-300PS 40V6MD sr.png
-40b6md
+40b6md_mast
 
 
 Name: S-300PMU-1 5N66ME (SA-20A Gargoyle)

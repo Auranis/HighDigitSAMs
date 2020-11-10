@@ -6,8 +6,8 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 GT.chassis.life = 4;
 
-GT.visual.shape = "40b6m";
-GT.visual.shape_dstr = "Auto-crush";
+GT.visual.shape = "40b6m_mast";
+GT.visual.shape_dstr = "40b6m_mast_d";
 GT.visual.fire_pos[2] = 1;
 
 GT.snd.radarRotation = "RadarRotation"; -- не поворот, но звук работы
@@ -107,7 +107,7 @@ GT.Name = "S-300PMU1 40B6M tr";
 GT.DisplayName = _("SAM SA-20 S-300PMU1 TR 30N6E");
 GT.Rate = 20;
 
-GT.Sensors = { RADAR = GT.Name, };
+GT.Sensors = { RADAR = "S-300PS 40B6M MAST tr", };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;

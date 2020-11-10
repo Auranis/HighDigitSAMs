@@ -1,6 +1,6 @@
 S-300PMU-1 5P85DE LN
 SAM/S-300PS 5P85D ln.png
-5p85d
+5p85su
 
 
 Name: S-300PMU-1 5P85DE (SA-20A Gargoyle)

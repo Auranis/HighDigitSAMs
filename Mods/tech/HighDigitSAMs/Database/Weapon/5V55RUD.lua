@@ -73,8 +73,8 @@ local SA5V55RUD = {
 	shape_table_data = 
 	{
 		{
-			name	 = "5B55";
-			file  	 = "5B55";
+			name	 = "5V55RUD";
+			file  	 = "5v55r";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "SA5V55RUD";

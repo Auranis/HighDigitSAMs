@@ -74,7 +74,7 @@ local SA48N6 = {
 	{
 		{
 			name	 = "48N6";
-			file  	 = "48H6E2";
+			file  	 = "48h6e2";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "48N6";

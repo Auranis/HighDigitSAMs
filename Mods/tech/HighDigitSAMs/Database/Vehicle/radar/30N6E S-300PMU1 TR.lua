@@ -107,7 +107,7 @@ GT.Name = "S-300PMU1 30N6E tr";
 GT.DisplayName = _("SAM SA-20 S-300PMU1 TR 30N6E(truck)");
 GT.Rate = 20;
 
-GT.Sensors = { RADAR = "S-300PMU1 40B6M tr", };
+GT.Sensors = { RADAR = "S-300PS 30H6 TRAILER tr", };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;

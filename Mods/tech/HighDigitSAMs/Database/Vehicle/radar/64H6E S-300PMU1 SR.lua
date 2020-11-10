@@ -6,8 +6,8 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 4;
 
-GT.visual.shape = "64H6E";
-GT.visual.shape_dstr = "64h6e_p_1";
+GT.visual.shape = "64n6";
+GT.visual.shape_dstr = "64n6_d";
 GT.visual.fire_pos[2] = 1;
 
 --chassis
@@ -64,7 +64,7 @@ GT.Name = "S-300PMU1 64N6E sr";
 GT.DisplayName = _("SAM SA-20 S-300PMU1 SR 64N6E");
 GT.Rate = 20;
 
-GT.Sensors = { RADAR = "S-300PS 64H6E sr" };
+GT.Sensors = { RADAR = "S-300PS 64H6E TRAILER sr" };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;

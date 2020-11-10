@@ -6,8 +6,8 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 4;
 
-GT.visual.shape = "40b6md";
-GT.visual.shape_dstr = "Auto-crush";
+GT.visual.shape = "40b6md_mast";
+GT.visual.shape_dstr = "40b6md_mast_d";
 GT.visual.fire_pos[2] = 1;
 
 GT.animation_arguments.locator_rotation = 11;
@@ -62,7 +62,7 @@ for i = 1,24 do -- 24 target trackers
     }
 end --for
 
-GT.Sensors = { RADAR = "S-300PS 40B6MD sr", };
+GT.Sensors = { RADAR = "S-300PS SA-10B 40B6MD MAST sr", };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;
