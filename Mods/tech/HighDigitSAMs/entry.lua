@@ -5,7 +5,7 @@ displayName   = _("High Digit SAMs"),
 shortName	  =   "HighDigitSAMs",
 state		 	  = "installed",
 developerName	  = "E. 'Wiki' Crouch",
-version		 	  = "1.2.0",	
+version		 	  = "1.3.0",	
 info		  =    _("Adds support for various modern SAMs to DCS world, including the S-300PMU1."),	 
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
@@ -62,6 +62,8 @@ weapon_file("/Database/Weapon/9M83M.lua")
 weapon_file("/Database/Weapon/9M82M.lua")
 weapon_file("/Database/Weapon/9M342.lua")
 weapon_file("/Database/Weapon/9M36.lua")
+weapon_file("/Database/Weapon/ammunition.lua")
+weapon_file("/Database/Weapon/cannon.lua")
 vehicle_file("/Database/Vehicle/radar/40B6M S-300PMU1 TR.lua")
 vehicle_file("/Database/Vehicle/radar/30N6E S-300PMU1 TR.lua")
 vehicle_file("/Database/Vehicle/radar/40B6MD S-300PMU1 SR.lua")
@@ -73,6 +75,7 @@ vehicle_file("/Database/Vehicle/radar/30H6 S-300PS TR Trailer.lua")
 vehicle_file("/Database/Vehicle/radar/40B6M S-300PS TR Mast.lua")
 vehicle_file("/Database/Vehicle/radar/40B6MD S-300PS SR Mast.lua")
 vehicle_file("/Database/Vehicle/radar/64H6E S-300PS SR Trailer.lua")
+vehicle_file("/Database/Vehicle/radar/SON-9.lua")
 -- vehicle_file("/Database/Vehicle/radar/Fan Song.lua")
 -- vehicle_file("/Database/Vehicle/radar/HQ-2 TR ZD-2.lua")
 vehicle_file("/Database/Vehicle/5P85CE S-300PMU1 LN.lua")
@@ -92,5 +95,6 @@ vehicle_file("/Database/Vehicle/S-300PS Command 54K6.lua")
 vehicle_file("/Database/Vehicle/S-300VM CP 9S457ME.lua")
 vehicle_file("/Database/Vehicle/iglaS.lua")
 vehicle_file("/Database/Vehicle/Strela-3.lua")
+vehicle_file("/Database/Vehicle/KS19.lua")
 
 plugin_done()
