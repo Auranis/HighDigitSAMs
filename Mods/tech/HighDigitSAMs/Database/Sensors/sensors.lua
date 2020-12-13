@@ -270,7 +270,7 @@ FLAP_LID =
                 radial_velocity_min = 10.0,
             },
             scan_period = 1.0,
-        },
+        }
 
 declare_sensor(FLAP_LID)
 
@@ -305,7 +305,7 @@ FLAP_LID_TRUCK =
                 radial_velocity_min = 10.0,
             },
             scan_period = 1.0,
-        },
+        }
 
 declare_sensor(FLAP_LID_TRUCK)
 
@@ -378,7 +378,7 @@ GRAVE_STONE =
                 radial_velocity_min = 10.0,
             },
             scan_period = 1.0,
-        },
+        }
 
 declare_sensor(GRAVE_STONE)
 

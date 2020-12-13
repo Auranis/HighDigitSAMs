@@ -10,7 +10,15 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.  
 All components labelled as SA-20 in the mission editor. ABM-optimized missiles coming soon!  
 The complex can also accommodate launchers for the 5V55RUD missiles.  
-Now includes a truck-mounted 30N6 radar, 3D model by EKO.
+Now includes a truck-mounted 30N6 radar, 3D model by EKO.  
+
+### S-300PS (SA-10B Grumble) Complex  
+This variant of the SA-10 has improved guidance and kinematics compared to the version included with DCS, as well as a brand new set of 3D models by EKO.  
+All components labelled as SA-10B in the mission editor.  
+
+### Polyana-D4M1 C2 Vehicle
+This wheeled command vehicle is perfect for Skynet users to use as a node for their IADS.  
+3D model by EKO.  
 
 ### S-300VM (SA-23 Gladiator/Giant) Complex (contributed by LetMePickThat)
 This upgraded variant of the S-300V features Track-Via-Missile guidance and the extremely capable 9M82M anti-ballstic missile, in addition to the 9M83M missile, all on a tracked chassis.    
@@ -20,6 +28,7 @@ All components labelled as SA-23 in the mission editor, complete with custom 3D 
 This upgraded missile has improved guidance from the original 5V55R, increasing its effective range vs. aircraft significantly.  
 Maximum range increased to 90km.  
 Available in the mission editor via the dedicated SA-10 (5V55RUD) launchers.  
+Can be used with either the SA-20 or SA-10B complexes.  
 
 ### 9K317 Buk-M1-2 (SA-17 Grizzly) Transporter/Erector/Launcher and Radar, 9A310M1-2  
 This upgraded Buk TELAR carries a more capable radar, and fires the 9M317 missiles, which is longer-ranged and more agile than the original 9M38 Buk missile.  
@@ -49,8 +58,21 @@ The 9K34 system was a major improvement over the previous 9K32 Strela-2, featuri
 It saw service around the world from the late 1970s onward.  
 Selectable in the mission editor as the SAM SA-14 Strela-3.  
 
+### SON-9 Fire Can AAA Director with KS-19 AAA Gun
+The SON-9/KS-19 combination was a potent Soviet heavy AAA system with radar guidance.  
+Selectable in the mission editor as: AAA SON-9 Fire Can, AAA 100mm KS-19  
+Currently using 3D models from the Sborka and Flak 18.  
+Thanks to Hextopia for the implementation.  
+
 ## Version history  
 
+V 1.3.0 2020-12-13 -  
+Added SON-9, KS-19 by Hextopia. Added new S-300 3D models by EKO.  
+Added SA-10B implementation by LetMePickThat.
+Increased 5V55RUD missile performance slightly. Slightly reduced overload limit for V-759 missile.
+Restored launch warning for SA-23.  
+Added Polyana-D4M1.  
+Added improved textures and 3D models for everything.
 V 1.2.0 2020-10-31 - Kinematics updates to missiles, added 9K338 and 9K34, added truck mount for 30N6 radar  
 V 1.1.0 2020-10-10 - Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
 V 1.0.0 2020-10-3 - Initial release  

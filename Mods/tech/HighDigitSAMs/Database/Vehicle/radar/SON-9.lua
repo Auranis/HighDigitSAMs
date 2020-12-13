@@ -70,14 +70,15 @@ GT.Name = "Fire Can radar";
 GT.DisplayName = _("AAA SON-9 Fire Can");
 GT.Rate = 15;
 
-GT.Sensors = { OPTIC = {"generic tank daysight"}, RADAR = {"Gepard"}, };
+GT.Sensors = { OPTIC = {"generic tank daysight"}, RADAR = {"SON-9 Fire Can TR"}, };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;  --Sets detection ring (yellow) for editor and F-10 map, value pulled from max sensor range
 GT.ThreatRange = 0;
 GT.mapclasskey = "P0091000046";
 GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar_Gun,Shilka_,
-				"SAM SR",
-				"RADAR_BAND1_FOR_ARM",
-				"RADAR_BAND2_FOR_ARM",
+				"AA_flak",
+                "Mobile AAA",
+                "SAM SR",
+                "RADAR_BAND1_FOR_ARM",
 				};
 GT.category = "Air Defence";

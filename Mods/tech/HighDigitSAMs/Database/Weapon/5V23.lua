@@ -91,7 +91,7 @@ local SA2V759 = {
 	Y_back_acc = 0.0,
 	Z_back_acc = 0.0,
 	Reflection = 0.3967,
-	KillDistance = 65.0,
+	KillDistance = 50.0,
 	shape_table_data = 
 	{
 		{

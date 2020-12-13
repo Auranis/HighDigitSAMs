@@ -53,6 +53,7 @@ end
 --Russia
 dofile(current_mod_path.."/Database/Sensors/sensors.lua")
 weapon_file("/Database/Weapon/5V55RUD.lua")
+weapon_file("/Database/Weapon/5V55R.lua")
 weapon_file("/Database/Weapon/48N6.lua")
 weapon_file("/Database/Weapon/9M317.lua")
 weapon_file("/Database/Weapon/5V23.lua")
@@ -95,6 +96,7 @@ vehicle_file("/Database/Vehicle/S-300PS Command 54K6.lua")
 vehicle_file("/Database/Vehicle/S-300VM CP 9S457ME.lua")
 vehicle_file("/Database/Vehicle/iglaS.lua")
 vehicle_file("/Database/Vehicle/Strela-3.lua")
+vehicle_file("/Database/Vehicle/Polyana-D4M1.lua")
 vehicle_file("/Database/Vehicle/KS19.lua")
 
 plugin_done()

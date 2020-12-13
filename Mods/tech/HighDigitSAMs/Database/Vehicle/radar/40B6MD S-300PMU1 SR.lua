@@ -10,7 +10,7 @@ GT.visual.shape = "40b6md_mast";
 GT.visual.shape_dstr = "40b6md_mast_d";
 GT.visual.fire_pos[2] = 1;
 
-GT.animation_arguments.locator_rotation = 11;
+GT.animation_arguments.locator_rotation = 1;
 GT.radar_rotation_period = 3.0;
 GT.snd.radarRotation = "RadarRotation";
 

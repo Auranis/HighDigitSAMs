@@ -11,7 +11,7 @@ GT.visual.shape_dstr = "64n6_d";
 GT.visual.fire_pos[2] = 1;
 
 --chassis
-GT.animation_arguments.locator_rotation = 11;
+GT.animation_arguments.locator_rotation = 0;
 GT.radar_rotation_period = 12.0;
 GT.snd.radarRotation = "RadarRotation";
 
