@@ -6,8 +6,8 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 2;
 
-GT.visual.shape = "5p85d";
-GT.visual.shape_dstr = "5p85d_p_1";
+GT.visual.shape = "5p85su";
+GT.visual.shape_dstr = "5p85su_d";
 
 --chassis
 
@@ -34,7 +34,8 @@ GT.WS[ws].pos = {-4.915, 2.036,0};
 GT.WS[ws].LN[1].ECM_K = -1
 GT.WS[ws].LN[1].beamWidth = 0.0;
 GT.WS[ws].LN[1].barrels_reload_type = 3; -- BarrelsReloadTypes.SEQUENTIALY
-GT.WS[ws].LN[1].depends_on_unit = {{{"S-300PS 40B6M tr"},},{{"S-300PMU1 40B6M tr"},},{{"S-300PMU1 30N6E tr"},},};
+GT.WS[ws].LN[1].depends_on_unit = {{{"S-300PS 40B6M tr"},},{{"S-300PMU1 40B6M tr"},},{{"S-300PMU1 30N6E tr"},},
+	{{"S-300PS SA-10B 40B6M MAST tr"},},{{"S-300PS 30N6 TRAILER tr"},},};
 GT.WS[ws].LN[1].reactionTime = 0.1;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 4;
 GT.WS[ws].LN[1].PL[1].shot_delay = 0.1;

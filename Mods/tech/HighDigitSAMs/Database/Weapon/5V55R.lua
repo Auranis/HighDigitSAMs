@@ -62,13 +62,14 @@ local SA5V55R2 = {
 	KillDistance = 20.0,
 	category = CAT_MISSILES,
 	ccm_k0       = 0.5,
-    --[[PN_coeffs = {
-        4,                 -- Number of Entries
-        2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
+    PN_coeffs = {
+        5,                 -- Number of Entries
+        5000.0 ,1.0,       -- Less 5 km to target use lead pursuit
+		6000.0 ,0.5,       -- Rapid transition at ~5 km to simulate switch from command to SARH guidance
         10000.0, 0.5,      -- Between 10 and 2 km  to target, Pn smoothly changes from 0.5 to 1.0. 
         30000.0, 0.2,      -- Between 30 and 10 km  to target, Pn smoothly changes from 0.1 to 0.5. 
-		50000.0, 0.0};
-	--]]
+		50000.0, 0.0
+	};
  -- Between 50 and 30 km  to target, Pn smoothly changes from 0 to 0.2. Longer then 50 km missile files pure pursuit.
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
