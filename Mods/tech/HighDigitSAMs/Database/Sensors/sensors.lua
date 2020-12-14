@@ -453,3 +453,39 @@ GROUND_FIRE_300 =
         }
 
 declare_sensor(GROUND_FIRE_300)
+
+-- SON-9 (Fire Can) Sensor
+
+FIRE_CAN = 
+		{
+			Name = "SON-9 Fire Can TR",
+			category = SENSOR_RADAR,
+			type = RADAR_AS,
+            scan_volume =
+            {
+                azimuth = {-180.0, 180.0},
+                elevation = {-15.0, 90.0}
+            },
+            max_measuring_distance = 80000.0,
+            detection_distance =
+            {
+                [HEMISPHERE_UPPER] =
+                {
+                    [ASPECT_HEAD_ON] = 80000.0,
+                    [ASPECT_TAIL_ON] = 80000.0
+                },
+                [HEMISPHERE_LOWER] =
+                {
+                    [ASPECT_HEAD_ON] = 80000.0,
+                    [ASPECT_TAIL_ON] = 80000.0
+                }
+            },
+            lock_on_distance_coeff = 0.4375,
+            velocity_limits =
+            {
+                radial_velocity_min = 20,
+            },
+            scan_period = 1.0,
+		}
+		
+declare_sensor(FIRE_CAN)
