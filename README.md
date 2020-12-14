@@ -72,7 +72,7 @@ Added SA-10B implementation by LetMePickThat.
 Increased 5V55RUD missile performance slightly. Slightly reduced overload limit for V-759 missile.
 Restored launch warning for SA-23.  
 Added Polyana-D4M1.  
-Added improved textures and 3D models for everything.
-V 1.2.0 2020-10-31 - Kinematics updates to missiles, added 9K338 and 9K34, added truck mount for 30N6 radar  
+Added improved textures and 3D models for everything.  
+V 1.2.0 2020-10-31 - Kinematics updates to missiles, added S-300VM, 9K338 and 9K34, added truck mount for 30N6 radar  
 V 1.1.0 2020-10-10 - Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
 V 1.0.0 2020-10-3 - Initial release  
