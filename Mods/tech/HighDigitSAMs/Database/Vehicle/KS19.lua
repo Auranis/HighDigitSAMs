@@ -59,3 +59,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Gun,ZU_23,
                 "Static AAA",
                 };
 GT.category = "Air Defence";
+GT.Countries = {"Bulgaria", "Czech Republic", "Germany", "Hungary", "Poland", "Romania", "USSR", "China", "Vietnam", "Iran", "Pakistan", "Russia"}
