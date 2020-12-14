@@ -66,13 +66,15 @@ Thanks to Hextopia for the implementation.
 
 ## Version history  
 
-V 1.3.0 2020-12-13 -  
+#### V 1.3.0 2020-12-13 -  
 Added SON-9, KS-19 by Hextopia. Added new S-300 3D models by EKO.  
 Added SA-10B implementation by LetMePickThat.
 Increased 5V55RUD missile performance slightly. Slightly reduced overload limit for V-759 missile.
 Restored launch warning for SA-23.  
 Added Polyana-D4M1.  
 Added improved textures and 3D models for everything.  
-V 1.2.0 2020-10-31 - Kinematics updates to missiles, added S-300VM, 9K338 and 9K34, added truck mount for 30N6 radar  
-V 1.1.0 2020-10-10 - Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
-V 1.0.0 2020-10-3 - Initial release  
+#### V 1.2.0 2020-10-31 - 
+Kinematics updates to missiles, added S-300VM, 9K338 and 9K34, added truck mount for 30N6 radar  
+#### V 1.1.0 2020-10-10 - 
+Second release, added V-759, V-601P, and HQ missiles/launchers, changed 48N6 guidance to command (no more launch warning)  
+#### V 1.0.0 2020-10-3 - Initial release  
