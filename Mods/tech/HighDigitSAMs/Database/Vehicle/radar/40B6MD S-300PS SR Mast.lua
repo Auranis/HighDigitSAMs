@@ -72,5 +72,6 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6MD,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.Countries = {"Algeria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine","Vietnam"}
 
 add_surface_unit(GT)
