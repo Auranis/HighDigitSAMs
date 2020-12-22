@@ -8,7 +8,7 @@ GT.visual.shape = "30h6_truck";
 GT.visual.shape_dstr = "Auto-crush";
 GT.visual.fire_pos[2] = 1;
 
-GT.snd.radarRotation = "RadarRotation"; -- не поворот, но звук работы
+GT.snd.radarRotation = "RadarRotation"; -- Г­ГҐ ГЇГ®ГўГ®Г°Г®ГІ, Г­Г® Г§ГўГіГЄ Г°Г ГЎГ®ГІГ»
 
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 160000;
@@ -90,6 +90,7 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6M,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.Countries = {"Algeria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine","Vietnam"}
 
 
 add_surface_unit(GT)
