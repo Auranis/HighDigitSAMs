@@ -31,23 +31,23 @@ local SA2V759 = {
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	Escort = 3,
 	Head_Type = 6,
-	sigma = {250, 250, 250},
+	sigma = {300, 300, 300},
 	M = 2406.0,
 	H_max = 30000.0,
 	H_min = 100,
 	Diam = 500.0,
 	Cx_pil = 1,
-	D_max = 45000.0,
+	D_max = 20000.0,
 	D_min = 6000.0,
 	Head_Form = 1,
 	Life_Time = 90.0,
-	Nr_max = 5,
+	Nr_max = 6,
 	v_min = 170.0,
 	v_mid = 338.0,
-	Mach_max = 3.5,
+	Mach_max = 3.0,
 	t_b = 0.0,
-	t_acc = 5.0, --Is 3 seconds in reality, but 1st stage cutoff is at 550 m/s, so 5 seconds gives us a more realistic acceleration profile.
-	t_marsh = 35.0,
+	t_acc = 3.0, --Expected 550 m/s at 2 seconds into flight
+	t_marsh = 40.0,
 	Range_max = 56000.0,
 	H_min_t = 100.0,
 	Fi_start = 3.14152,
@@ -55,20 +55,24 @@ local SA2V759 = {
 	Fi_excort = 0.75,
 	Fi_search = 99.9,
 	OmViz_max = 99.9,
-	ccm_k0 = 2.0,
+	ccm_k0 = 3.0,
 	
+	-- Revision 2021-01-19
 	-- Below I am attempting to roughly simulate the half-lead command guidance mode
-	-- At launch the missile assumes a half-lead trajectory
-	-- as the missile approaches the target, the missile point-of-aim also approaches the target
+	-- At launch the missile assumes a "half-lead" trajectory, aiming towards the predicted point of impact
+	-- with a maximum deviation from SNR boresight of 4 degrees.
+	-- as the missile approaches the target, the missile point-of-aim approaches the target
 	-- ideally this would be simulated by a smooth transition of PN 0.5 to 1.0 from launch to impact,
 	-- but there is a problem: I cannot set a variable coefficient range
 	-- As a compromise, I am having the missile start transitioning at roughly twice its minimum range.
-	-- For our simulation, the PN peaks at 1.0 at range 2000 meters, then drops off to 0.8 before impact.
+	-- For our simulation, the PN peaks at 1.0 at range 5000 meters, then drops off to 0.8 before impact.
 	-- This helps simulate the latency in the guidance system, and how that makes out-maneuvering the missile possible IRL.
-	PN_coeffs = {3,
+	PN_coeffs = {5,
 					1000.0, 0.8, --
 					2000.0 ,1.0,
-					12000.0, 0.5},
+					5000.0 ,1.0,
+					15000.0, 0.5,
+					20000.0, 0.2},
 	warhead 		= 
 	{
 		mass 					= 302; 
