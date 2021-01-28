@@ -5,8 +5,8 @@
 
 GT = {};--Define new Ground Target
 GT_t.ws = 0;
-set_recursive_metatable(GT, GT_t.generic_track_vehicle);--Pull definitions/values for generic tracked vehicle because of Dog ear model, probably could use static definition
-set_recursive_metatable(GT.chassis, GT_t.CH_t.MTLB);
+set_recursive_metatable(GT, GT_t.generic_stationary);
+set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 
 GT.visual.shape = "mys-m1"; --Dog Ear used as stand-in model
 GT.visual.shape_dstr = "mys-m1_p_1";
@@ -15,7 +15,7 @@ GT.visual.shape_dstr = "mys-m1_p_1";
 --chassis
 --Sets radar antenna rotation properties
 GT.swing_on_run = false;
-GT.animation_arguments.locator_rotation = 11;
+GT.animation_arguments.locator_rotation = 1;
 GT.radar_rotation_period = 3.0;
 GT.snd.radarRotation = "RadarRotation";
 
@@ -70,7 +70,7 @@ GT.Name = "Fire Can radar";
 GT.DisplayName = _("AAA SON-9 Fire Can");
 GT.Rate = 15;
 
-GT.Sensors = { OPTIC = {"generic tank daysight"}, RADAR = {"SON-9 Fire Can TR"}, };
+GT.Sensors = { RADAR = {"SON-9 Fire Can TR"}, };
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;  --Sets detection ring (yellow) for editor and F-10 map, value pulled from max sensor range
 GT.ThreatRange = 0;

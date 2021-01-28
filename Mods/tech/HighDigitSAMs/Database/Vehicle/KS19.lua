@@ -21,7 +21,10 @@ GT.AddPropVehicle = {
 --chassis
 --Define new sensor for ground target
 GT.sensor = {};
-set_recursive_metatable(GT.sensor, GT_t.SN_visual);  --Pull sensor definitions for generic visual sensor
+GT.sensor.max_range_finding_target = 35000;
+GT.sensor.min_range_finding_target = 0;
+GT.sensor.max_alt_finding_target = 15000;
+GT.sensor.min_alt_finding_target = 0
 GT.sensor.height = 2.0;
 
 --Burning after hit
