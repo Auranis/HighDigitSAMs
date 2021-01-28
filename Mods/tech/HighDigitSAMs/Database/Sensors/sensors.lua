@@ -59,9 +59,117 @@ CHAIR_BACK =
 declare_sensor(CHAIR_BACK)
 
 
--- S-300VM SENSORS
+-- S-300V SENSORS
 
 GRILL_PAN =
+        {
+			Name = "S-300V 9S32 tr",
+			category = SENSOR_RADAR,
+            type = RADAR_AS,
+             scan_volume = 
+		    {
+			    azimuth = {-180.0, 180.0},
+                elevation = {-15.0, 80.0}
+		    },
+		    max_measuring_distance = 240000,
+		    detection_distance = 
+		    {
+			    [HEMISPHERE_UPPER] =
+			    {
+			    	[ASPECT_HEAD_ON] = 150000.0,
+			    	[ASPECT_TAIL_ON] = 150000.0
+			    },
+			    [HEMISPHERE_LOWER] =
+			    {
+			    	[ASPECT_HEAD_ON] = 150000.0,
+			    	[ASPECT_TAIL_ON] = 150000.0
+			    }
+		    },
+		    lock_on_distance_coeff =0.8,
+			multiple_targets_tracking = true,
+            velocity_limits =
+            {
+                radial_velocity_min = 10.0,
+            },
+            scan_period = 1.0,
+        }
+
+declare_sensor(GRILL_PAN)
+
+HIGH_SCREEN =
+        {
+			Name = "S-300V 9S19 sr",
+			category = SENSOR_RADAR,
+            type = RADAR_AS,
+            scan_volume =
+            {
+                azimuth = {-180.0, 180.0},
+                elevation = {-15.0, 70.0}
+            },
+            max_measuring_distance = 280000.0,
+            detection_distance =
+            {
+                [HEMISPHERE_UPPER] =
+                {
+                    [ASPECT_HEAD_ON] = 175000.0,
+                    [ASPECT_TAIL_ON] = 175000.0
+                },
+                [HEMISPHERE_LOWER] =
+                {
+                    [ASPECT_HEAD_ON] = 175000.0,
+                    [ASPECT_TAIL_ON] = 175000.0
+                }
+            },
+            lock_on_distance_coeff = 0.8,
+			multiple_targets_tracking = true,
+            velocity_limits =
+            {
+                radial_velocity_min = 10.0,
+            },
+            scan_period = 1.0,
+        }
+
+declare_sensor(HIGH_SCREEN)
+
+BILL_BOARD =
+        {
+			Name = "S-300V 9S15 sr",
+			category = SENSOR_RADAR,
+            type = RADAR_AS,
+            scan_volume =
+            {
+                azimuth = {-180.0, 180.0},
+                elevation = {-15.0, 75.0}
+            },
+            max_measuring_distance = 385000.0,
+            detection_distance =
+            {
+                [HEMISPHERE_UPPER] =
+                {
+                    [ASPECT_HEAD_ON] = 240000.0,
+                    [ASPECT_TAIL_ON] = 240000.0
+                },
+                [HEMISPHERE_LOWER] =
+                {
+                    [ASPECT_HEAD_ON] = 240000.0,
+                    [ASPECT_TAIL_ON] = 240000.0
+                }
+            },
+            lock_on_distance_coeff = 0.8,
+			multiple_targets_tracking = true,
+            velocity_limits =
+            {
+                radial_velocity_min = 10.0,
+            },
+            scan_period = 1.0,
+        }
+
+declare_sensor(BILL_BOARD)
+
+
+-- S-300VM SENSORS
+
+GRILL_PAN_M =
         {
 			Name = "S-300VM 9S32ME tr",
 			category = SENSOR_RADAR,
@@ -94,9 +202,9 @@ GRILL_PAN =
             scan_period = 1.0,
         }
 
-declare_sensor(GRILL_PAN)
+declare_sensor(GRILL_PAN_M)
 
-HIGH_SCREEN =
+HIGH_SCREEN_M =
         {
 			Name = "S-300VM 9S19M2 sr",
 			category = SENSOR_RADAR,
@@ -129,9 +237,9 @@ HIGH_SCREEN =
             scan_period = 1.0,
         }
 
-declare_sensor(HIGH_SCREEN)
+declare_sensor(HIGH_SCREEN_M)
 
-BILL_BOARD =
+BILL_BOARD_M =
         {
 			Name = "S-300VM 9S15M2 sr",
 			category = SENSOR_RADAR,
@@ -164,10 +272,10 @@ BILL_BOARD =
             scan_period = 1.0,
         }
 
-declare_sensor(BILL_BOARD)
+declare_sensor(BILL_BOARD_M)
 
 
--- S-300PS SENSORS
+-- S-300PS/PMU1 SENSORS
 
 BIG_BIRD =
         {
@@ -454,38 +562,40 @@ GROUND_FIRE_300 =
 
 declare_sensor(GROUND_FIRE_300)
 
--- SON-9 (Fire Can) Sensor
 
-FIRE_CAN = 
-		{
-			Name = "SON-9 Fire Can TR",
+-- SOVIET & RUSSIAN ARM DECOYS
+
+GAZETCHIK_DECOY =
+        {
+			Name = "34Ya6E Gazetchik E decoy",
 			category = SENSOR_RADAR,
-			type = RADAR_AS,
+            type = RADAR_AS,
             scan_volume =
             {
                 azimuth = {-180.0, 180.0},
-                elevation = {-15.0, 90.0}
+                elevation = {-15.0, 60.0}
             },
-            max_measuring_distance = 80000.0,
+            max_measuring_distance = 20000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 80000.0,
-                    [ASPECT_TAIL_ON] = 80000.0
+                    [ASPECT_HEAD_ON] = 20000.0,
+                    [ASPECT_TAIL_ON] = 20000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 80000.0,
-                    [ASPECT_TAIL_ON] = 80000.0
+                    [ASPECT_HEAD_ON] = 20000.0,
+                    [ASPECT_TAIL_ON] = 20000.0
                 }
             },
-            lock_on_distance_coeff = 0.4375,
+            lock_on_distance_coeff = 0.01,
+			multiple_targets_tracking = true,
             velocity_limits =
             {
-                radial_velocity_min = 20,
+                radial_velocity_min = 1.0,
             },
-            scan_period = 1.0,
-		}
-		
-declare_sensor(FIRE_CAN)
+            scan_period = 0.2,
+        }
+
+declare_sensor(GAZETCHIK_DECOY)

@@ -4,13 +4,13 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 4;
 
-GT.visual.shape = "64H6E";
-GT.visual.shape_dstr = "64h6e_p_1";
+GT.visual.shape = "9s19m2";
+GT.visual.shape_dstr = "9s19m2_d";
 GT.visual.fire_pos[2] = 1;
 
 --chassis
 GT.animation_arguments.locator_rotation = 11;
-GT.radar_rotation_period = 12.0;
+GT.radar_rotation_period = 24.0;
 GT.snd.radarRotation = "RadarRotation";
 
 GT.sensor = {};

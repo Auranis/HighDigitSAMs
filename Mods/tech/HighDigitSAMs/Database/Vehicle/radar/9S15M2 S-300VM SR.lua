@@ -5,7 +5,7 @@ set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 4;
 
 GT.visual.shape = "9s15m2";
-GT.visual.shape_dstr = "Auto-crush";
+GT.visual.shape_dstr = "9s15m2_d";
 GT.visual.fire_pos[2] = 1;
 
 --chassis

@@ -7,7 +7,7 @@ set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 GT.chassis.life = 4;
 
 GT.visual.shape = "30h6_truck";
-GT.visual.shape_dstr = "Auto-crush";
+GT.visual.shape_dstr = "30h6_truck_d";
 GT.visual.fire_pos[2] = 1;
 
 GT.snd.radarRotation = "RadarRotation"; -- не поворот, но звук работы
