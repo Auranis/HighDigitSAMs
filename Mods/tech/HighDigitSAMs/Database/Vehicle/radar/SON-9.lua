@@ -1,6 +1,6 @@
 -- SON-9 FIRE CAN Gun Laying RADAR
 -- Version 1.0
--- Last updated: 13 December 2020
+-- Last updated: 27 January 2021
 -- Authors: Hextopia, Auranis
 
 GT = {};--Define new Ground Target
@@ -8,8 +8,8 @@ GT_t.ws = 0;
 set_recursive_metatable(GT, GT_t.generic_track_vehicle);--Pull definitions/values for generic tracked vehicle because of Dog ear model, probably could use static definition
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MTLB);
 
-GT.visual.shape = "Sborka"; --Dog Ear used as stand-in model
-GT.visual.shape_dstr = "Sborka_P_1";
+GT.visual.shape = "mys-m1"; --Dog Ear used as stand-in model
+GT.visual.shape_dstr = "mys-m1_p_1";
 
 --Seems to be capable of targetting for up to 6 KS-19 guns at once
 --chassis
