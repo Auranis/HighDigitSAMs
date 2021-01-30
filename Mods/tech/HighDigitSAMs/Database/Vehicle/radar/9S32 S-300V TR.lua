@@ -67,7 +67,7 @@ for i = 1,5 do -- 5 tracker's
     ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
     GT.WS[ws].base = 1
-    GT.WS[ws].pos = {0,27,0}
+    GT.WS[ws].pos = {0,0,0}
 	GT.WS[ws].angles = {
 					{math.rad(45), math.rad(-45), math.rad(-10), math.rad(80)},
 					};

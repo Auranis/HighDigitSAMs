@@ -36,7 +36,7 @@ GT.WS.radar_type = 102;
 -- 0 tracker, dummy
 local ws = GT_t.inc_ws();
 GT.WS[ws] = {};
-GT.WS[ws].pos = {0,27,0};
+GT.WS[ws].pos = {0,5,0};
 GT.WS[ws].angles = {
 					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
 					};

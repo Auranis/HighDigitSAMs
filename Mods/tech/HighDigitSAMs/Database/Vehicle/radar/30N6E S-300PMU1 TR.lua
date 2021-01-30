@@ -48,7 +48,7 @@ GT.WS.searchRadarMaxElevation = math.rad(80);
 -- 0 tracker, dummy
 local ws = GT_t.inc_ws();
 GT.WS[ws] = {};
-GT.WS[ws].pos = {0,27,0};
+GT.WS[ws].pos = {0,5,0};
 GT.WS[ws].angles = {
 					{math.rad(45), math.rad(-45), math.rad(-10), math.rad(80)},
 					};
@@ -71,7 +71,7 @@ GT.WS[ws].LN[1].beamWidth = math.rad(90);
 -- 6 trackers, first tracker is main, other 5 are limited within 120 degree
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
-GT.WS[ws].pos = {0,27,0};
+GT.WS[ws].pos = {0,5,0};
 GT.WS[ws].angles = {
 					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
 					};
@@ -90,7 +90,7 @@ for i = 1,5 do -- 5 tracker's
     ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
     GT.WS[ws].base = 2
-    GT.WS[ws].pos = {0,27,0}
+    GT.WS[ws].pos = {0,0,0}
 	GT.WS[ws].angles = {
 					{math.rad(45), math.rad(-45), math.rad(-10), math.rad(80)},
 					};
