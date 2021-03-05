@@ -83,7 +83,7 @@ local SA9M82 = {
 	{
 		{
 			name	 = "9m82";
-			file  	 = "9m82";
+			file  	 = "9m82_hds";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "SA9M82";
