@@ -76,4 +76,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,RLO_9C19M2,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
-GT.Countries = {"Russia"}
+GT.Countries = {"Ukraine","Russia"}
