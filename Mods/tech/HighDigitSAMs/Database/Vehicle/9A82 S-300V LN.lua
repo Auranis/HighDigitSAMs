@@ -56,4 +56,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss,PU_5P85D,
 				"SAM LL",
 				};
 GT.category = "Air Defence";
-GT.Countries = {"Russia"}
+GT.Countries = {"Ukraine","Russia"}
