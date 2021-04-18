@@ -25,7 +25,7 @@ end
 
 local SA9M82M = {
 	Name = SA9M82M, --SA9M82M
-	display_name = _('9M82M'),
+	display_name = _('SA9M82M'),
 	name = "SA9M82M",
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
 	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
