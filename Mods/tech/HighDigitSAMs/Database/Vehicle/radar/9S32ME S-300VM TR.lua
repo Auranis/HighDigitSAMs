@@ -34,7 +34,8 @@ GT.WS = {};
 GT.WS.maxTargetDetectionRange = 230000;
 GT.WS.radar_type = 102;
 
--- 6 trackers, first tracker is main, other 5 are limited within 120 degree
+-- 24 trackers, first tracker is main, other 23 are limited within 120 degree
+-- This in in line with documentation from rosoboronexport, which specifies that up to 24 targets can be engaged at a time with up to 48 missiles.
 
 -- 0 tracker, dummy
 local ws = GT_t.inc_ws();
@@ -63,7 +64,7 @@ GT.WS[ws].LN[1].max_trg_alt = 150000;
 GT.WS[ws].LN[1].beamWidth = math.rad(90);
 
 
-for i = 1,5 do -- 5 tracker's
+for i = 1,23 do -- 23 tracker's
     ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
     GT.WS[ws].base = 1
