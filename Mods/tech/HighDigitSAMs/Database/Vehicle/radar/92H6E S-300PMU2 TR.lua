@@ -6,7 +6,7 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
 GT.chassis.life = 4;
 
-GT.visual.shape = "30h6_truck";
+GT.visual.shape = "92n6_truck";
 GT.visual.shape_dstr = "30h6_truck_d";
 GT.visual.fire_pos[2] = 1;
 
