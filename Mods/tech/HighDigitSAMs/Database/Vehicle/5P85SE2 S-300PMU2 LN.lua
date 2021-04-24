@@ -6,7 +6,7 @@ set_recursive_metatable(GT, GT_t.generic_stationary);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.MAZ543M);
 GT.chassis.life = 2;
 
-GT.visual.shape = "5985se";
+GT.visual.shape = "5p85se";
 GT.visual.shape_dstr = "5p85se_d";
 
 --chassis
