@@ -10,7 +10,7 @@ GT.visual.shape = "30h6_truck";
 GT.visual.shape_dstr = "30h6_truck_d";
 GT.visual.fire_pos[2] = 1;
 
-GT.snd.radarRotation = "RadarRotation"; -- не поворот, но звук работы
+GT.snd.radarRotation = "RadarRotation"; -- Г­ГҐ ГЇГ®ГўГ®Г°Г®ГІ, Г­Г® Г§ГўГіГЄ Г°Г ГЎГ®ГІГ»
 
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 160000;
@@ -104,7 +104,7 @@ for i = 1,5 do -- 5 tracker's
 end --for
 
 GT.Name = "S-300PMU1 30N6E tr";
-GT.DisplayName = _("SAM SA-20 S-300PMU1 TR 30N6E(truck)");
+GT.DisplayName = _("SAM SA-20A S-300PMU1 TR 30N6E(truck)");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = "S-300PS 30H6 TRAILER tr", };
