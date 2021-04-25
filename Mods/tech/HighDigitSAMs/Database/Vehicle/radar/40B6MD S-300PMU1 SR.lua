@@ -74,3 +74,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6MD,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.Countries = {"Algeria", "China", "India", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine","Vietnam"}
