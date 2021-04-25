@@ -61,7 +61,7 @@ for i = 1,24 do
 end --for
 
 GT.Name = "S-300PMU1 64N6E sr";
-GT.DisplayName = _("SAM SA-20 S-300PMU1 SR 64N6E");
+GT.DisplayName = _("SAM SA-20A S-300PMU1 SR 64N6E");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = "S-300PS 64H6E TRAILER sr" };
