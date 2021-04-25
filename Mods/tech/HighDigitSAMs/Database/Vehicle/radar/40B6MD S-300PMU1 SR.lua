@@ -35,7 +35,7 @@ GT.visual.fire_pos[3] = 0; -- center of burn at transverse axis shift(meters)
 GT.visual.fire_time = 900; --burning time (seconds)
 
 GT.Name = "S-300PMU1 40B6MD sr";
-GT.DisplayName = _("SAM SA-20 S-300PMU1 SR 5N66E");
+GT.DisplayName = _("SAM SA-20A S-300PMU1 SR 5N66E");
 GT.Rate = 20;
 
 local ws = 0;
