@@ -67,4 +67,9 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss, SA3_LN,
 				"SAM LL",
                 };
 GT.category = "Air Defence";
+GT.tags  =
+{
+    "Air Defence",
+	"Launcher",
+}
 GT.Countries = {"China", "Iran", "Pakistan"}
