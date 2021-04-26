@@ -196,6 +196,6 @@ GT.category = "Air Defence";
 GT.tags  =
 {
     "Air Defence",
-	"Launcher",
+	"SAM TEL",
 }
 GT.Countries = {"Algeria", "Belarus", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine"}
