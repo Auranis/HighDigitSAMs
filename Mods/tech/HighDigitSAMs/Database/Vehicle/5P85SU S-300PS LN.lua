@@ -60,5 +60,5 @@ GT.tags  =
 {
     "Air Defence",
 	"Launcher",
-}
+};
 GT.Countries = {"Algeria", "Belarus", "Bulgaria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria", "Ukraine", "USA", "Vietnam"}
