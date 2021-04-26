@@ -176,7 +176,8 @@ GT.WS[ws].LN[1].beamWidth = math.rad(90);
 GT.WS[ws].LN[1].maxShootingSpeed = 0;
 
 GT.Name = "SA-17 Buk M1-2 LN 9A310M1-2";
-GT.DisplayName = _("SAM SA-17 Buk M1-2 LN 9A310M1-2");
+GT.DisplayName = _('SAM SA-17 Buk-M1-2 "Grizzly" TEL');
+GT.DisplayNameShort = _('SA-17');
 GT.Rate = 70;
 
 GT.Sensors = { OPTIC = {"Karat visir"}, RADAR = {"SA-17 Buk TR"}};

@@ -59,7 +59,8 @@ for i = 1,15 do
 end --for
 
 GT.Name = "S-300PS 64H6E TRAILER sr";
-GT.DisplayName = _("SAM SA-10B S-300PS 64H6E SR");
+GT.DisplayName = _("SAM SA-10B S-300PS Big Bird SR");
+GT.DisplayNameShort = _("SA-10B SR");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = GT.Name, };
@@ -74,5 +75,6 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,RLO_64H6E,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Search Radar" };
 
 add_surface_unit(GT)

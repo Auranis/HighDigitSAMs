@@ -80,7 +80,8 @@ for i = 1,23 do -- 23 tracker's
 end --for
 
 GT.Name = "S-300VM 9S32ME tr";
-GT.DisplayName = _("SAM SA-23 S-300VM 9S32ME TR");
+GT.DisplayName = _("SAM SA-23 S-300VM Grill Pan TR");
+GT.DisplayNameShort = _("SA-23 TR")
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = GT.Name };
@@ -95,4 +96,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = {"Air Defence", "Tracking Radar"};
 GT.Countries = {"Egypt", "India", "Russia", "Venezuela"}

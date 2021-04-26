@@ -104,7 +104,8 @@ for i = 1,5 do -- 5 tracker's
 end --for
 
 GT.Name = "S-300PMU1 30N6E tr";
-GT.DisplayName = _("SAM SA-20A S-300PMU1 TR 30N6E(truck)");
+GT.DisplayName = _("SAM SA-20A S-300PMU-1 Tomb Stone(truck) TR");
+GT.DisplayNameShort = _("SA-20A TR");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = "S-300PS 30H6 TRAILER tr", };

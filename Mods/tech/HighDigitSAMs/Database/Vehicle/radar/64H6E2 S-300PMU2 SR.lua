@@ -61,7 +61,8 @@ for i = 1,24 do
 end --for
 
 GT.Name = "S-300PMU2 64H6E2 sr";
-GT.DisplayName = _("SAM SA-20B S-300PMU2 SR 64N6E2");
+GT.DisplayName = _("SAM SA-20B S-300PMU-2 Big Bird SR");
+GT.DisplayNameShort = _("SA-20B SR");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = "S-300PMU2 64H6E2 sr" };
@@ -76,3 +77,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,RLO_64H6E,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Search Radar" };

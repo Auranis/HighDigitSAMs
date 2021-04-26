@@ -54,7 +54,8 @@ for i = 1,24 do
 end
 
 GT.Name = "S-300PMU1 54K6 cp"
-GT.DisplayName = _("SAM SA-20A S-300PMU1 CP 54K6")
+GT.DisplayName = _('SAM SA-20A S-300PMU-1 "Gargoyle" C2')
+GT.DisplayNameShort = _('SA-20A CP')
 GT.Rate = 20
 
 GT.Sensors = {RADAR = {"S-300PS 40B6M tr"}};

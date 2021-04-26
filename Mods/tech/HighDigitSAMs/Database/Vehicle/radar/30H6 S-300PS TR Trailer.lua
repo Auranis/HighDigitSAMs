@@ -97,7 +97,8 @@ for i = 1,5 do -- 5 tracker's
 end --for
 
 GT.Name = "S-300PS 30N6 TRAILER tr";
-GT.DisplayName = _("SAM SA-10B S-300PS 30N6 TR");
+GT.DisplayName = _('SAM SA-10B S-300PS Flap Lid(truck) TR');
+GT.DisplayNameShort = _('SA-10B TR')
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = GT.Name, };
@@ -112,6 +113,6 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6M,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
-
+GT.tags = {"Air Defence", "Tracking Radar"};
 
 add_surface_unit(GT)

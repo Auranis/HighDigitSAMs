@@ -54,7 +54,8 @@ __LN.BR = {
 __LN = nil;
 	
 GT.Name = "S_75M_Volhov_V759";
-GT.DisplayName = _("SAM SA-2 (V759) LN SM-90");
+GT.DisplayName = _('SAM SA-2 (V759) "Guideline" LN');
+GT.DisplayNameShort = _('SA-2')
 GT.Rate = 10;
 
 GT.DetectionRange  = 0;

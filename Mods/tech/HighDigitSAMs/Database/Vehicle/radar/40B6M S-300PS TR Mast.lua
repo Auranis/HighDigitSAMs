@@ -82,7 +82,7 @@ GT.WS[ws].LN[1].reflection_limit = 0.049;
 GT.WS[ws].LN[1].ECM_K = 0.4;
 GT.WS[ws].LN[1].min_trg_alt = 25;
 GT.WS[ws].LN[1].max_trg_alt = 27000;
-GT.WS[ws].LN[1].beamWidth = math.rad();
+GT.WS[ws].LN[1].beamWidth = math.rad(0);
 
 for i = 1,5 do -- 5 tracker's
     ws = GT_t.inc_ws();
@@ -100,7 +100,8 @@ for i = 1,5 do -- 5 tracker's
 end --for
 
 GT.Name = "S-300PS SA-10B 40B6M MAST tr";
-GT.DisplayName = _("SAM SA-10B S-300PS 40B6M TR");
+GT.DisplayName = _("SAM SA-10B S-300PS Flap Lid(mast) TR");
+GT.DisplayNameShort = _("SA-10B TR");
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = GT.Name, };
@@ -115,6 +116,6 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6M,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
-
+GT.tags = { "Air Defence", "Tracking Radar" };
 
 add_surface_unit(GT)

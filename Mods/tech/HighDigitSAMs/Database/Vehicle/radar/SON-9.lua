@@ -44,9 +44,7 @@ GT.WS.maxTargetDetectionRange = 35000;
 GT.WS.radar_type = 104;
 GT.WS.radar_rotation_type = 0;
 
-local ws  = 0;
-
-    ws = GT_t.inc_ws();
+	local ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
     GT.WS[ws].pos = {0,3,0}
 	GT.WS[ws].angles = {
@@ -67,7 +65,8 @@ local ws  = 0;
     GT.WS[ws].LN[1].max_trg_alt = GT.sensor.max_alt_finding_target;
 
 GT.Name = "Fire Can radar";
-GT.DisplayName = _("AAA SON-9 Fire Can");
+GT.DisplayName = _("AAA SON-9 Fire Can TR");
+GT.DisplayNameShort = _("SON-9");
 GT.Rate = 15;
 
 GT.Sensors = { RADAR = {"SON-9 Fire Can TR"}, };
@@ -82,4 +81,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar_Gun,Shilka_,
                 "RADAR_BAND1_FOR_ARM",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "AAA", "Tracking Radar" };
 GT.Countries = {"Bulgaria", "Czech Republic", "Germany", "Hungary", "Poland", "Romania", "USSR", "China", "Vietnam", "Iran", "Pakistan", "Russia"}

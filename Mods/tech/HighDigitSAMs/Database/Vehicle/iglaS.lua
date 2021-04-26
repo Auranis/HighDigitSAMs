@@ -32,7 +32,8 @@ __LN.sightMasterMode = 1;
 __LN.sightIndicationMode = 1;
 
 GT.Name = "SA-24 Igla-S manpad";
-GT.DisplayName = _("SAM SA-24 Igla-S manpad");
+GT.DisplayName = _('MANPADS SA-24 Igla-S "Grinch"');
+GT.DisplayNameShort = _('SA-24');
 GT.Rate = 5;
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
@@ -46,7 +47,7 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss,IglaRUS_1,
 				};
 				
 GT.category = "Air Defence";
-
+GT.tags = { "Air Defence", "MANPADS" };
 GT.Transportable = {
 	size = 100
 }

@@ -54,7 +54,8 @@ for i = 1,15 do
 end
 
 GT.Name = "S-300V 9S457 cp"
-GT.DisplayName = _("SAM SA-12 S-300V 9S457 CP")
+GT.DisplayName = _('SAM SA-12 S-300V "Gladiator/Giant" C2')
+GT.DisplayNameShort = _('SA-12 CP')
 GT.Rate = 20
 
 GT.Sensors = {RADAR = {"GRILL PAN"}};
@@ -67,4 +68,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_NoWeapon,wsType_GenericVehicle,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Command & Control" };
 GT.Countries = {"Ukraine", "Russia"}

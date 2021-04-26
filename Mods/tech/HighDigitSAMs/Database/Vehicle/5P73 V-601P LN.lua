@@ -44,7 +44,8 @@ __LN.min_launch_angle = math.rad(9);
 __LN = nil;
 
 GT.Name = "5p73 V-601P ln";
-GT.DisplayName = _("SAM SA-3 (V-601P) LN 5P73");
+GT.DisplayName = _("SAM SA-3 (V-601P) S-125 LN");
+GT.DisplayNameShort = _("SA-3 (HDS)");
 GT.Rate = 5;
 
 GT.DetectionRange  = 0;
@@ -55,4 +56,9 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss,SA3_LN,
 				"MR SAM",
 				"SAM LL",
 				};
+GT.tags  =
+{
+    "Air Defence",
+	"Launcher",
+};
 GT.category = "Air Defence";

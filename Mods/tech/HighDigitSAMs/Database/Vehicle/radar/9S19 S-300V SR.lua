@@ -61,7 +61,8 @@ for i = 1,15 do
 end --for
 
 GT.Name = "S-300V 9S19 sr";
-GT.DisplayName = _("SAM SA-12 S-300V 9S19 SR");
+GT.DisplayName = _("SAM SA-12 S-300V High Screen SR");
+GT.DisplayNameShort = _('SA-12 SR');
 GT.Rate = 20;
 
 GT.Sensors = { RADAR = GT.Name };
@@ -76,4 +77,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,RLO_9C19M2,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = {"Air Defence", "Search Radar"};
 GT.Countries = {"Ukraine", "Russia"}

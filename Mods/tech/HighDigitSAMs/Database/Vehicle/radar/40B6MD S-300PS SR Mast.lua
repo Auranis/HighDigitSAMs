@@ -33,7 +33,8 @@ GT.visual.fire_pos[3] = 0; -- center of burn at transverse axis shift(meters)
 GT.visual.fire_time = 900; --burning time (seconds)
 
 GT.Name = "S-300PS SA-10B 40B6MD MAST sr";
-GT.DisplayName = _("SAM SA-10B S-300PS 40B6MD SR");
+GT.DisplayName = _("SAM SA-10B S-300PS Clam Shell SR");
+GT.DisplayNameShort = _("SA-10B SR");
 GT.Rate = 20;
 
 local ws = 0;
@@ -72,5 +73,6 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6MD,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Search Radar" };
 
 add_surface_unit(GT)

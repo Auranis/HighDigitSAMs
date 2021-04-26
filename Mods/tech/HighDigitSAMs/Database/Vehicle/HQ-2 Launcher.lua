@@ -54,7 +54,8 @@ __LN.BR = {
 __LN = nil;
 	
 GT.Name = "HQ_2_Guideline_LN";
-GT.DisplayName = _("SAM HQ-2 LN SM-90");
+GT.DisplayName = _('SAM HQ-2 "Guideline" LN');
+GT.DisplayNameShort = _('HQ-2');
 GT.Rate = 10;
 
 GT.DetectionRange  = 0;

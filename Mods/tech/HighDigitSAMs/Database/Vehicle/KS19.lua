@@ -52,6 +52,7 @@ GT.WS[ws].LN[1].BR = { {connector_name = "POINT_GUN_01", recoilArgument = 23, re
 
 GT.Name = "KS19";
 GT.DisplayName = _("AAA 100mm KS-19");
+GT.DisplayNameShort = _("KS-19");
 GT.Rate = 4;
 
 GT.DetectionRange  = 0;  --Set detection ring range to 0 for mission editor and F-10 map
@@ -62,4 +63,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Gun,ZU_23,
                 "Static AAA",
                 };
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "AAA", };
 GT.Countries = {"Bulgaria", "Czech Republic", "Germany", "Hungary", "Poland", "Romania", "USSR", "China", "Vietnam", "Iran", "Pakistan", "Russia"}
