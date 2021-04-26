@@ -30,6 +30,8 @@ GT.CustomAimPoint = {0,1.5,0}
 GT.WS = {};
 GT.WS.maxTargetDetectionRange = 160000;
 GT.WS.radar_type = 102;
+GT.WS.radar_rotation_type = 0;
+GT.WS.searchRadarMaxElevation = math.rad(80);
 
 -- 0 tracker, dummy
 local ws = GT_t.inc_ws();

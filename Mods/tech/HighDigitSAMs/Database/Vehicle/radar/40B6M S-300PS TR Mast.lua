@@ -30,6 +30,8 @@ GT.CustomAimPoint = {0,1.5,0}
 GT.WS = {};
 GT.WS.maxTargetDetectionRange = 160000;
 GT.WS.radar_type = 102;
+GT.WS.radar_rotation_type = 0;
+GT.WS.searchRadarMaxElevation = math.rad(80);
 
 -- 0 tracker, dummy
 local ws = GT_t.inc_ws();
@@ -41,8 +43,6 @@ GT.WS[ws].angles = {
 GT.WS[ws].drawArgument1 = 0;
 GT.WS[ws].omegaY = 0.174533;
 GT.WS[ws].omegaZ = 0.174533;
-GT.WS[ws].pidY = { p = 10, i = 0.1, d = 4};
-GT.WS[ws].pidZ = { p = 10, i = 0.1, d = 4};
 GT.WS[ws].LN = {};
 GT.WS[ws].LN[1] = {};
 GT.WS[ws].LN[1].depends_on_unit = {{{"S-300PS SA-10B 54K6 cp"}}};
