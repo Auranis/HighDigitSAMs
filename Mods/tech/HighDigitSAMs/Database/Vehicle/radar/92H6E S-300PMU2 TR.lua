@@ -68,7 +68,8 @@ GT.WS[ws].LN[1].min_trg_alt = 25;
 GT.WS[ws].LN[1].max_trg_alt = 90000;
 GT.WS[ws].LN[1].beamWidth = math.rad(90);
 
--- 6 trackers, first tracker is main, other 5 are limited within 120 degree
+-- "The S-300PMU-2 is referred in the West as SA-20B Gargoyle. The systems' fire control radar can detect 100 targets, track and engage 36 of them and guide 72 missiles.
+-- It is worth noting that earlier radars of the S-300 family could simultaneously engage only 6 targets and guide 12 missiles."
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].pos = {0,27,0};
@@ -86,7 +87,7 @@ set_recursive_metatable(GT.WS[ws].LN[1], GT.WS[1].LN[1])
 GT.WS[ws].LN[1].distanceMax = 270000;
 GT.WS[ws].LN[1].beamWidth = math.rad(0);
 
-for i = 1,5 do -- 5 tracker's
+for i = 1,35 do -- 35 tracker's
     ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
     GT.WS[ws].base = 2
@@ -119,3 +120,4 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6M,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Tracking Radar" };

@@ -57,4 +57,9 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss,PU_5P85D,
 				"SAM LL",
 				};
 GT.category = "Air Defence";
-GT.Countries = {"Algeria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine","Vietnam"}
+GT.tags  =
+{
+    "Air Defence",
+	"Launcher",
+};
+GT.Countries = {"Algeria", "Belarus", "Bulgaria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria", "Ukraine", "USA", "Vietnam"}

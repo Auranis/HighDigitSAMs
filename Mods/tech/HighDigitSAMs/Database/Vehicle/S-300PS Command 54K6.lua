@@ -66,5 +66,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_NoWeapon,wsType_GenericVehicle,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
-
-add_surface_unit(GT)
+GT.tags = { "Air Defence", "Command & Control" };
+GT.Countries = {"Algeria", "Belarus", "Bulgaria", "China", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine", "USA", "Vietnam"}

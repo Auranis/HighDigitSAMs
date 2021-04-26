@@ -35,7 +35,7 @@ GT.visual.fire_pos[3] = 0; -- center of burn at transverse axis shift(meters)
 GT.visual.fire_time = 900; --burning time (seconds)
 
 GT.Name = "S-300PMU1 40B6MD sr";
-GT.DisplayName = _("SAM SA-20 S-300PMU1 SR 5N66E");
+GT.DisplayName = _("SAM SA-20A S-300PMU1 SR 5N66E");
 GT.Rate = 20;
 
 local ws = 0;
@@ -74,3 +74,5 @@ GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,V_40B6MD,
 				"CustomAimPoint",
 				};
 GT.category = "Air Defence";
+GT.tags = { "Air Defence", "Search Radar" };
+GT.Countries = {"Algeria", "China", "India", "Iran", "Kazakhstan", "North Korea", "Russia", "Syria","Ukraine","Vietnam"}
