@@ -8,7 +8,7 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 
 ### S-300PMU-1 (SA-20A Gargoyle) Complex  
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.  
-All components labelled as SA-20 in the mission editor. ABM-optimized missiles coming soon!  
+All components labelled as SA-20A in the mission editor. 
 The complex can also accommodate launchers for the 5V55RUD missiles.  
 Now includes a truck-mounted 30N6 radar, 3D model by ERO.  
 
@@ -73,6 +73,12 @@ Thanks to Hextopia for the implementation.
 
 ## Version history  
 
+#### V 1.4.2 2021-04-27 -  
+Added PDF guide, added 51P6a and 92N6 models  
+fixed bug with S-300VM guidance  
+updated display names and added short display names for all units   increased maximum targets for 92N6 engagement radar (SA-20B) to 36   increased maximum targets for 9S32 engagement radar (SA-23) to 24  updated all S-300P variants to give lock-only warning  
+#### V 1.4.1 2021-01-30 -  
+Hotfix for model conflict  
 #### V 1.4.0 2021-01-27 -  
 Added S-300PMU-2, S-300V, Gazetchik Decoy by LetMePickThat, including new 3D models by ERO  
 Reduced top speed and accuracy of V-759, tweaked PN coefficients.
