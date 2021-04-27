@@ -32,8 +32,6 @@ GT.CustomAimPoint = {0,1.5,0}
 GT.WS = {};
 GT.WS.maxTargetDetectionRange = 270000;
 GT.WS.radar_type = 102;
-GT.WS.radar_rotation_type = 0;
-GT.WS.searchRadarMaxElevation = math.rad(80);
 
 -- We would like to engage targets using the radar without locking them up
 -- But how can we do this?
@@ -50,30 +48,6 @@ local ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].pos = {0,5,0};
 GT.WS[ws].angles = {
-					{math.rad(45), math.rad(-45), math.rad(-10), math.rad(80)},
-					};
-GT.WS[ws].omegaY = 0.174533;
-GT.WS[ws].omegaZ = 0.174533;
-GT.WS[ws].LN = {};
-GT.WS[ws].LN[1] = {};
-GT.WS[ws].LN[1].depends_on_unit = {{{"S-300PMU1 54K6 cp"},},{{"S-300PS 54K6 cp"},},{{"S-300PMU2 54K6E2 cp"},},};
-GT.WS[ws].LN[1].reactionTime = 0.1;
-GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
-GT.WS[ws].LN[1].type = 102;
-GT.WS[ws].LN[1].distanceMin = 2000;
-GT.WS[ws].LN[1].distanceMax = 2000;
-GT.WS[ws].LN[1].reflection_limit = 0.02;
-GT.WS[ws].LN[1].ECM_K = 0.4;
-GT.WS[ws].LN[1].min_trg_alt = 25;
-GT.WS[ws].LN[1].max_trg_alt = 90000;
-GT.WS[ws].LN[1].beamWidth = math.rad(90);
-
--- "The S-300PMU-2 is referred in the West as SA-20B Gargoyle. The systems' fire control radar can detect 100 targets, track and engage 36 of them and guide 72 missiles.
--- It is worth noting that earlier radars of the S-300 family could simultaneously engage only 6 targets and guide 12 missiles."
-ws = GT_t.inc_ws();
-GT.WS[ws] = {};
-GT.WS[ws].pos = {0,5,0};
-GT.WS[ws].angles = {
 					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
 					};
 GT.WS[ws].drawArgument1 = 0;
@@ -83,14 +57,25 @@ GT.WS[ws].pidY = { p = 10, i = 0.1, d = 4};
 GT.WS[ws].pidZ = { p = 10, i = 0.1, d = 4};
 GT.WS[ws].LN = {};
 GT.WS[ws].LN[1] = {};
-set_recursive_metatable(GT.WS[ws].LN[1], GT.WS[1].LN[1])
+GT.WS[ws].LN[1].depends_on_unit = {{{"S-300PMU1 54K6 cp"},},{{"S-300PS 54K6 cp"},},{{"S-300PMU2 54K6E2 cp"},},};
+GT.WS[ws].LN[1].reactionTime = 0.1;
+GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
+GT.WS[ws].LN[1].type = 102;
+GT.WS[ws].LN[1].distanceMin = 2000;
 GT.WS[ws].LN[1].distanceMax = 270000;
-GT.WS[ws].LN[1].beamWidth = math.rad(0);
+GT.WS[ws].LN[1].reflection_limit = 0.02;
+GT.WS[ws].LN[1].ECM_K = 0.4;
+GT.WS[ws].LN[1].min_trg_alt = 25;
+GT.WS[ws].LN[1].max_trg_alt = 90000;
+GT.WS[ws].LN[1].beamWidth = math.rad(90);
+
+-- "The S-300PMU-2 is referred in the West as SA-20B Gargoyle. The systems' fire control radar can detect 100 targets, track and engage 36 of them and guide 72 missiles.
+-- It is worth noting that earlier radars of the S-300 family could simultaneously engage only 6 targets and guide 12 missiles."
 
 for i = 1,35 do -- 35 tracker's
     ws = GT_t.inc_ws();
 	GT.WS[ws] = {}
-    GT.WS[ws].base = 2
+    GT.WS[ws].base = 1
     GT.WS[ws].pos = {0,0,0}
 	GT.WS[ws].angles = {
 					{math.rad(45), math.rad(-45), math.rad(-10), math.rad(80)},
@@ -99,7 +84,7 @@ for i = 1,35 do -- 35 tracker's
     GT.WS[ws].omegaZ = 3
     GT.WS[ws].LN = {}
     GT.WS[ws].LN[1] = {}
-	set_recursive_metatable(GT.WS[ws].LN[1], GT.WS[2].LN[1])
+	set_recursive_metatable(GT.WS[ws].LN[1], GT.WS[1].LN[1])
 end --for
 
 GT.Name = "S-300PMU2 92H6E tr";

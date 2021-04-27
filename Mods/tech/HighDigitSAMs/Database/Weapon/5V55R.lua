@@ -28,7 +28,7 @@ local SA5V55R2 = {
 	display_name = _('5V55R'),
 	name = "SA5V55R2",
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
-	Head_Type = 6, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
+	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma = {50, 50, 50}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
 	M = 1480.0, -- Mass of the missile at launch
 	H_max = 30000.0, -- Maximum target altitude
