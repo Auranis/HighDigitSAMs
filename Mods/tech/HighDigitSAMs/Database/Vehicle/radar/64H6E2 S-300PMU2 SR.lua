@@ -16,7 +16,7 @@ GT.radar_rotation_period = 12.0;
 GT.snd.radarRotation = "RadarRotation";
 
 GT.sensor = {};
-GT.sensor.max_range_finding_target = 260000;
+GT.sensor.max_range_finding_target = 330000;
 GT.sensor.min_range_finding_target = 2000;
 GT.sensor.max_alt_finding_target = 90000;
 GT.sensor.height = 8.68;
@@ -24,7 +24,7 @@ GT.sensor.height = 8.68;
 GT.CustomAimPoint = {0,1.5,0}
 
 GT.WS = {};
-GT.WS.maxTargetDetectionRange = 260000;
+GT.WS.maxTargetDetectionRange = 330000;
 GT.WS.radar_type = 102;
 GT.WS.radar_rotation_type = 0;
 
