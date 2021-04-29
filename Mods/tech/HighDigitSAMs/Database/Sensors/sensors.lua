@@ -287,21 +287,21 @@ BIG_BIRD =
                 azimuth = {-180.0, 180.0},
                 elevation = {-15.0, 60.0}
             },
-            max_measuring_distance = 200000.0,
+            max_measuring_distance = 260000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 200000.0,
+                    [ASPECT_HEAD_ON] = 260000.0,
                     [ASPECT_TAIL_ON] = 200000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 200000.0,
-                    [ASPECT_TAIL_ON] = 200000.0
+                    [ASPECT_HEAD_ON] = 260000.0,
+                    [ASPECT_TAIL_ON] = 260000.0
                 }
             },
-            lock_on_distance_coeff = 0.85,
+            lock_on_distance_coeff = 0.75,
 			multiple_targets_tracking = true,
             velocity_limits =
             {
@@ -430,21 +430,21 @@ BIG_BIRD_E =
                 azimuth = {-180.0, 180.0},
                 elevation = {-15.0, 60.0}
             },
-            max_measuring_distance = 330000.0,
+            max_measuring_distance = 400000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 330000.0,
-                    [ASPECT_TAIL_ON] = 330000.0
+                    [ASPECT_HEAD_ON] = 400000.0,
+                    [ASPECT_TAIL_ON] = 400000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 330000.0,
-                    [ASPECT_TAIL_ON] = 330000.0
+                    [ASPECT_HEAD_ON] = 400000.0,
+                    [ASPECT_TAIL_ON] = 400000.0
                 }
             },
-            lock_on_distance_coeff = 0.85,
+            lock_on_distance_coeff = 1.0,
 			multiple_targets_tracking = true,
             velocity_limits =
             {
@@ -465,18 +465,18 @@ GRAVE_STONE =
                 azimuth = {-180.0, 180.0},
                 elevation = {-15.0, 60.0}
             },
-            max_measuring_distance = 270000.0,
+            max_measuring_distance = 300000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 270000.0,
-                    [ASPECT_TAIL_ON] = 270000.0
+                    [ASPECT_HEAD_ON] = 300000.0,
+                    [ASPECT_TAIL_ON] = 300000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 270000.0,
-                    [ASPECT_TAIL_ON] = 270000.0
+                    [ASPECT_HEAD_ON] = 300000.0,
+                    [ASPECT_TAIL_ON] = 300000.0
                 }
             },
             lock_on_distance_coeff = 0.85,
