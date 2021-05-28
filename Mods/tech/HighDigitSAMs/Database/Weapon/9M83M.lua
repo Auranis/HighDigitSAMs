@@ -82,8 +82,8 @@ local SA9M83M = {
 	shape_table_data = 
 	{
 		{
-			name	 = "9m83m";
-			file  	 = "9m83m";
+			name	 = "9m83m_hds";
+			file  	 = "9m83m_hds";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "SA9M83M";
