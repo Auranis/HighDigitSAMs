@@ -35,7 +35,7 @@ local SA9M82M = {
 	H_min = 1000.0, -- minimum target altitude
 	Diam = 810.0, -- Missile diameter in cm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
-	D_max = 14000.0, -- Maximum range firing at low altitude, in meters
+	D_max = 150000.0, -- Maximum range firing at low altitude, in meters
 	D_min = 5000.0, -- minimum range in meters
 	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
 	Life_Time = 240.0, -- Battery life
@@ -82,8 +82,8 @@ local SA9M82M = {
 	shape_table_data = 
 	{
 		{
-			name	 = "9m82m";
-			file  	 = "9m82m";
+			name	 = "9m82m_hds";
+			file  	 = "9m82m_hds";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "SA9M82M";
