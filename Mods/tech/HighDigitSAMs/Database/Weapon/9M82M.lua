@@ -31,7 +31,7 @@ local SA9M82M = {
 	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma = {30, 30, 30}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
 	M = 4635.0, -- Mass of the missile at launch
-	H_max = 37000.0, -- Maximum target altitude
+	H_max = 150000.0, -- Maximum target altitude
 	H_min = 1000.0, -- minimum target altitude
 	Diam = 810.0, -- Missile diameter in cm
 	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
