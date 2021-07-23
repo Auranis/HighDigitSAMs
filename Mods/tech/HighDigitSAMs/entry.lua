@@ -5,7 +5,7 @@ displayName   = _("High Digit SAMs"),
 shortName	  =   "HighDigitSAMs",
 state		 	  = "installed",
 developerName	  = "E. 'Wiki' Crouch",
-version		 	  = "1.4.2",	
+version		 	  = "1.4.3",	
 info		  =    _("Adds various modern and historical air defense units to DCS world."),	 
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
@@ -151,9 +151,9 @@ vehicle_file("/Database/Vehicle/radar/34Ya6E Gazetchik E decoy.lua")
 
 -- S-400
 
-vehicle_file("/Database/Vehicle/51P6A S-400 LN.lua")
+--[[vehicle_file("/Database/Vehicle/51P6A S-400 LN.lua")
 vehicle_file("/Database/Vehicle/S-400 CP 55K6.lua")
-vehicle_file("/Database/Vehicle/radar/96L6E S-400 SR.lua")
+vehicle_file("/Database/Vehicle/radar/96L6E S-400 SR.lua")]]
 
 -- SAMp/T NG
 
