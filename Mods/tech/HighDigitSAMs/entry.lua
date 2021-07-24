@@ -157,13 +157,13 @@ vehicle_file("/Database/Vehicle/radar/96L6E S-400 SR.lua")]]
 
 -- SAMp/T NG
 
-vehicle_file("/Database/Vehicle/radar/SAMPT NG MRI GF300.lua")
+--[[vehicle_file("/Database/Vehicle/radar/SAMPT NG MRI GF300.lua")
 vehicle_file("/Database/Vehicle/radar/SAMPT MRI ARABEL.lua")
 vehicle_file("/Database/Vehicle/SAMPT MGE.lua")
 vehicle_file("/Database/Vehicle/SAMPT MC.lua")
 vehicle_file("/Database/Vehicle/SAMPT ME.lua")
 vehicle_file("/Database/Vehicle/SAMPT MLT.lua") --Aster 30 block 1
-vehicle_file("/Database/Vehicle/SAMPT NG MLT.lua") --Aster 30 block 1NT
+vehicle_file("/Database/Vehicle/SAMPT NG MLT.lua") --Aster 30 block 1NT]]
 
 -- vehicle_file("/Database/Vehicle/radar/Fan Song.lua")
 -- vehicle_file("/Database/Vehicle/radar/HQ-2 TR ZD-2.lua")
