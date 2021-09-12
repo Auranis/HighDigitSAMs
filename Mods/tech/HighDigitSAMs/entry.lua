@@ -60,7 +60,6 @@ weapon_file("/Database/Weapon/5V55RUD.lua")
 weapon_file("/Database/Weapon/5V55R.lua")
 weapon_file("/Database/Weapon/48N6.lua")
 weapon_file("/Database/Weapon/48N6E2.lua")
-weapon_file("/Database/Weapon/48N6DM.lua")
 weapon_file("/Database/Weapon/9M317.lua")
 weapon_file("/Database/Weapon/5V23.lua")
 weapon_file("/Database/Weapon/5V27.lua")
@@ -73,8 +72,6 @@ weapon_file("/Database/Weapon/9M342.lua")
 weapon_file("/Database/Weapon/9M36.lua")
 weapon_file("/Database/Weapon/ammunition.lua")
 weapon_file("/Database/Weapon/cannon.lua")
-weapon_file("/Database/Weapon/Aster_30_Blk_1NT.lua")
-weapon_file("/Database/Weapon/Aster_30_Blk_1.lua")
 
 --KS-19
 
@@ -147,25 +144,5 @@ vehicle_file("/Database/Vehicle/Strela-3.lua")
 
 vehicle_file("/Database/Vehicle/Polyana-D4M1.lua")
 vehicle_file("/Database/Vehicle/radar/34Ya6E Gazetchik E decoy.lua")
-
-
--- S-400
-
---[[vehicle_file("/Database/Vehicle/51P6A S-400 LN.lua")
-vehicle_file("/Database/Vehicle/S-400 CP 55K6.lua")
-vehicle_file("/Database/Vehicle/radar/96L6E S-400 SR.lua")]]
-
--- SAMp/T NG
-
---[[vehicle_file("/Database/Vehicle/radar/SAMPT NG MRI GF300.lua")
-vehicle_file("/Database/Vehicle/radar/SAMPT MRI ARABEL.lua")
-vehicle_file("/Database/Vehicle/SAMPT MGE.lua")
-vehicle_file("/Database/Vehicle/SAMPT MC.lua")
-vehicle_file("/Database/Vehicle/SAMPT ME.lua")
-vehicle_file("/Database/Vehicle/SAMPT MLT.lua") --Aster 30 block 1
-vehicle_file("/Database/Vehicle/SAMPT NG MLT.lua") --Aster 30 block 1NT]]
-
--- vehicle_file("/Database/Vehicle/radar/Fan Song.lua")
--- vehicle_file("/Database/Vehicle/radar/HQ-2 TR ZD-2.lua")
 
 plugin_done()
