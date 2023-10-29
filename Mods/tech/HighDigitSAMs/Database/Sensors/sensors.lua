@@ -599,3 +599,4 @@ GAZETCHIK_DECOY =
         }
 
 declare_sensor(GAZETCHIK_DECOY)
+

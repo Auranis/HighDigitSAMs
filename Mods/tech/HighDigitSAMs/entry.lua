@@ -5,7 +5,7 @@ displayName   = _("High Digit SAMs"),
 shortName	  =   "HighDigitSAMs",
 state		 	  = "installed",
 developerName	  = "E. 'Wiki' Crouch",
-version		 	  = "1.4.2",	
+version		 	  = "1.4.3",	
 info		  =    _("Adds various modern and historical air defense units to DCS world."),	 
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
@@ -52,6 +52,7 @@ end
 
 --Russia
 dofile(current_mod_path.."/Database/Sensors/sensors.lua")
+
 
 -- Weapon files
 
@@ -122,9 +123,5 @@ vehicle_file("/Database/Vehicle/Strela-3.lua")
 
 vehicle_file("/Database/Vehicle/Polyana-D4M1.lua")
 vehicle_file("/Database/Vehicle/radar/34Ya6E Gazetchik E decoy.lua")
-
-
--- vehicle_file("/Database/Vehicle/radar/Fan Song.lua")
--- vehicle_file("/Database/Vehicle/radar/HQ-2 TR ZD-2.lua")
 
 plugin_done()
