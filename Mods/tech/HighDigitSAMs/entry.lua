@@ -55,8 +55,6 @@ dofile(current_mod_path.."/Database/Sensors/sensors.lua")
 
 -- Weapon files
 
-weapon_file("/Database/Weapon/5V55RUD.lua")
-weapon_file("/Database/Weapon/5V55R.lua")
 weapon_file("/Database/Weapon/48N6.lua")
 weapon_file("/Database/Weapon/48N6E2.lua")
 weapon_file("/Database/Weapon/9M317.lua")
@@ -69,25 +67,6 @@ weapon_file("/Database/Weapon/9M82.lua")
 weapon_file("/Database/Weapon/9M83.lua")
 weapon_file("/Database/Weapon/9M342.lua")
 weapon_file("/Database/Weapon/9M36.lua")
-weapon_file("/Database/Weapon/ammunition.lua")
-weapon_file("/Database/Weapon/cannon.lua")
-
---KS-19
-
-vehicle_file("/Database/Vehicle/radar/SON-9.lua")
-vehicle_file("/Database/Vehicle/KS19.lua")
-
---S-300PS
-
-vehicle_file("/Database/Vehicle/S-300PS Command 54K6.lua")
-vehicle_file("/Database/Vehicle/5P85SE S-300PS LN.lua")
-vehicle_file("/Database/Vehicle/5P85SU S-300PS LN.lua")
-vehicle_file("/Database/Vehicle/5P85CE S-300PS LN.lua")
-vehicle_file("/Database/Vehicle/5P85DE S-300PS LN.lua")
-vehicle_file("/Database/Vehicle/radar/30H6 S-300PS TR Trailer.lua")
-vehicle_file("/Database/Vehicle/radar/40B6M S-300PS TR Mast.lua")
-vehicle_file("/Database/Vehicle/radar/40B6MD S-300PS SR Mast.lua")
-vehicle_file("/Database/Vehicle/radar/64H6E S-300PS SR Trailer.lua")
 
 --S-300PMU1
 
