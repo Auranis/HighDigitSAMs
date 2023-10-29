@@ -600,39 +600,3 @@ GAZETCHIK_DECOY =
 
 declare_sensor(GAZETCHIK_DECOY)
 
--- SON-9 FIRE CAN RADAR
-
-FIRE_CAN =
-        {
-            Name = "SON-9 Fire Can TR",
-            category = SENSOR_RADAR,
-            type = RADAR_AS,
-            scan_volume =
-            {
-                azimuth = {-180.0, 180.0},
-                elevation = {0.0, 89.0}
-            },
-            max_measuring_distance = 50000.0,
-            detection_distance =
-            {
-                [HEMISPHERE_UPPER] =
-                {
-                    [ASPECT_HEAD_ON] = 35000.0,
-                    [ASPECT_TAIL_ON] = 35000.0
-                },
-                [HEMISPHERE_LOWER] =
-                {
-                    [ASPECT_HEAD_ON] = 35000.0,
-                    [ASPECT_TAIL_ON] = 35000.0
-                }
-            },
-            lock_on_distance_coeff = 0.85,
-            multiple_targets_tracking = false,
-            velocity_limits =
-            {
-                radial_velocity_min = 0.0,
-            },
-            scan_period = 1.0,
-        }
-
-declare_sensor(FIRE_CAN)
