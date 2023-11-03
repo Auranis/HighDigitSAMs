@@ -41,11 +41,11 @@ local SA9M83M = {
 	Life_Time = 200.0, -- Battery life
 	Nr_max = 30, -- Maximum g when turning
 	v_min = 0.0, -- Minimum speed in m/s
-	v_mid = 1500.0, -- average speed in m/s
+	v_mid = 1200.0, -- average speed in m/s
 	Mach_max = 5.25, -- maximum Mach of the missile
 	t_b = 0.3, -- Motor start delay
-	t_acc = 5.0, -- motor burn time
-	t_marsh = 16.0, -- cruise time, 0.0 if not applicable
+	t_acc = 6.0, -- motor burn time
+	t_marsh = 15.0, -- cruise time, 0.0 if not applicable
 	Range_max = 100000.0, -- Max range in meters
 	H_min_t = 10.0, -- minimum target height above the terrain, m.
 	Fi_start = 3.14152, -- angle of tracking and sighting at launch, in radians
@@ -83,7 +83,7 @@ local SA9M83M = {
 	{
 		{
 			name	 = "9m83m";
-			file  	 = "9m83m";
+			file  	 = "9m83m_hds";
 			life  	 = 1;
 			fire  	 = { 0, 1};
 			username = "SA9M83M";
