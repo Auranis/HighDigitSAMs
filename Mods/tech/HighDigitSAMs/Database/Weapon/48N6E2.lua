@@ -24,51 +24,58 @@ local function simple_aa_warhead(power, caliber) -- By Saint
 end
 
 local SA48N6E2 = {
-	Name = SA48N6E2, --48N6E2
-	display_name = _('48N6E2 (SA-20B Gargoyle)'),
-	name = "SA48N6E2",
+	Cx_pil = 8,
+	D_max = 100000, -- Maximum range firing at low altitude, in meters
+	D_min = 6000, -- minimum range in meters
+	Damage = 357.5,
+	Diam = 519, -- Missile diameter in mm
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
-	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
-	sigma = {40, 40, 40}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
-	M = 1800.0, -- Mass of the missile at launch
-	H_max = 27000.0, -- Maximum target altitude
-	H_min = 10.0, -- minimum target altitude
-	Diam = 519.0, -- Missile diameter in mm
-	Cx_pil = 8, -- "Cx like pendants" - Moment of inertia??
-	D_max = 150000.0, -- Maximum range firing at low altitude, in meters
-	D_min = 4000.0, -- minimum range in meters
-	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
-	Life_Time = 180.0, -- Battery life
-	Nr_max = 25, -- Maximum g when turning
-	v_min = 50.0, -- Minimum speed in m/s
-	v_mid = 1000.0, -- average speed in m/s
-	Mach_max = 8.0, -- maximum Mach of the missile. In DCS this seems to assume the missile is not subject to drag, so a little headroom is necessary
-	t_b = 0.0, -- Motor start delay
-	t_acc = 12.0, -- motor burn time
-	t_marsh = 4.0, -- cruise time, 0.0 if not applicable
-	Range_max = 200000.0, -- Max range in meters
-	H_min_t = 10.0, -- minimum target height above the terrain, m.
-	Fi_start = 3.14152, -- angle of tracking and sighting at launch, in radians
+	Fi_excort = 2, -- tracking angle (sighting) of the target by the missile.
 	Fi_rak = 3.14152, -- allowable angle of view of the target, in radians
-	Fi_excort = 2.0, -- tracking angle (sighting) of the target by the missile.
 	Fi_search = 99.9, -- limit angle of free search
+	Fi_start = 3.14152, -- angle of tracking and sighting at launch, in radians
+	H_max = 30000, -- Maximum target altitude
+	H_min = 10, -- minimum target altitude
+	H_min_t = 10, -- minimum target height above the terrain, m.
+	Head_Form = 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
+	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
+	KillDistance = 25,
+	Life_Time = 200, -- Battery life
+	M = 1780, -- Mass of the missile at launch
+	Mach_max = 8.6, -- maximum Mach of the missile. 
+	ModelData = { 58, 2.1, 0.047, 0.092, 0.014, -0.015, 0.72, 1.13, 0.8, 0.01, 0.21, 0.3, 3, 0.9, 0, 11.2, 0, 0, 0, 1000000000, 0, 0, 93.75, 0, 0, 0, 0, 0, 0, 230000, 0, 0, 0, 0, 1000000000, 200, 0, 0.5, 1000000000, 1000000000, 0, 650, 25, 1.19, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+	Name = SA48N6E2, --48N6
+	Nr_max = 25, -- Maximum g when turning
 	OmViz_max = 99.9, -- line-of-sight speed limit
-	warhead = simple_aa_warhead(143.0),
-	exhaust1 = {1, 1, 1, 1},
-	X_back = -3.681,
-	Y_back = 0.0,
-	Z_back = 0.0,
+	--PN_gain = 1,
+	Range_max = 200000, -- Max range in meters
 	Reflection = 0.2,
-	KillDistance = 25.0,
-	category = CAT_MISSILES,
-	ccm_k0       = 0.2, -- Countermeasures effectiveness
+	X_back = -5.681,
+	Y_back = 0,
+	Z_back = 0,
+	_unique_resource_name = "weapons.missiles.SA48H6E2",
+	ccm_k0 = 0.2, -- Countermeasures effectiveness
+	display_name = _('48N6E2 S-300PMU-2 (SA-20B Gargoyle)'),
+	display_name_short = _('48N6E2 (SA-20B Gargoyle)'),
+	exhaust = { 1, 1, 1, 1 },
+	exhaust_effect_type = 1,
+	name = "SA48N6E2",
+	nozzle_exit_area = 0.148,
+	sigma = { 50, 50, 50 },
+	supersonic_A_coef_skew = 0.17,
+	t_acc = 11.2, -- motor burn time
+	t_b = 0.9, -- Motor start delay
+	t_marsh = 0, -- cruise time, 0.0 if not applicable
+	v_mid = 1000,
+	v_min = 170,
+	warhead = simple_aa_warhead(143.0),
+
     PN_coeffs = {
-        4,                 -- Number of Entries
-        2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
-        10000.0, 0.5,      -- Between 10 and 2 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-        30000.0, 0.2,      -- Between 30 and 10 km  to target, Pn smoothly changes from 0.1 to 0.5. 
-		50000.0, 0.0,
-    }; -- Between 50 and 30 km  to target, Pn smoothly changes from 0 to 0.2. Longer then 50 km missile files pure pursuit.
+       4,                 -- Number of Entries
+       2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
+       10000.0, 0.5,      -- Between 10 and 2 km  to target, Pn smoothly changes from 0.5 to 1.0. 
+       30000.0, 0.2,      -- Between 30 and 10 km  to target, Pn smoothly changes from 0.1 to 0.5. 
+    }; --Longer then 30 km missile files pure pursuit.
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
 	{
@@ -93,7 +100,7 @@ GT_t.WS_t.S_300PMU2.reference_angle_Z = math.rad(90)
 GT_t.WS_t.S_300PMU2.LN = {}
 GT_t.WS_t.S_300PMU2.LN[1] = {}
 GT_t.WS_t.S_300PMU2.LN[1].type = 4
-GT_t.WS_t.S_300PMU2.LN[1].distanceMin = 4000
+GT_t.WS_t.S_300PMU2.LN[1].distanceMin = 6000
 GT_t.WS_t.S_300PMU2.LN[1].distanceMax = 200000
 GT_t.WS_t.S_300PMU2.LN[1].ECM_K = 0.4;
 GT_t.WS_t.S_300PMU2.LN[1].reactionTime = 10
