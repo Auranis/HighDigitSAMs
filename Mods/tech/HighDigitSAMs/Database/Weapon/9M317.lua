@@ -30,7 +30,7 @@ local SA9M317 = {
 	Escort = 3,
 	Head_Type = 6,
 	sigma = {25, 25, 25},
-	M = 710.0,
+	M = 715,
 	H_max = 50000.0,
 	H_min = 15.0,
 	Diam = 400.0,
@@ -40,12 +40,12 @@ local SA9M317 = {
 	Head_Form = 1,
 	Life_Time = 80.0,
 	Nr_max = 24,
-	v_min = 170.0,
-	v_mid = 430.0,
-	Mach_max = 4.5,
+	v_min = 300.0,
+	v_mid = 900.0,
+	Mach_max = 3.8,
 	t_b = 0.0,
 	t_acc = 7.0,
-	t_marsh = 12.0,
+	t_marsh = 11.0,
 	Range_max = 50000.0,
 	H_min_t = 15.0,
 	Fi_start = 3.14152,
@@ -60,12 +60,12 @@ local SA9M317 = {
 	Y_back = 0.0,
 	Z_back = 0.0,
 	Reflection = 0.0918,
-	KillDistance = 13.0,
+	KillDistance = 13,
 	ccm_k0       = 0.5,
     PN_coeffs = {
         3,                 -- Number of Entries
-        2000.0 ,1.0,       -- Less 2 km to target Pn = 1
-        8000.0, 0.5,      -- Between 8 and 2 km  to target, Pn smoothly changes from 0.5 to 1.0. 
+        5000.0 ,1.0,       -- Less 5 km to target Pn = 1
+        10000.0, 0.5,      -- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
         15000.0, 0.2
     }; -- Between 15 and 8 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 15 km Pn = 0.2.
 	category = CAT_MISSILES,

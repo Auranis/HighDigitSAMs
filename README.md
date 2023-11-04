@@ -8,17 +8,12 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 
 ### S-300PMU-1 (SA-20A Gargoyle) Complex  
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.  
-All components labelled as SA-20A in the mission editor. 
-The complex can also accommodate launchers for the 5V55RUD missiles.  
+All components labelled as SA-20A in the mission editor.  
 Now includes a truck-mounted 30N6 radar, 3D model by ERO.  
 
 ### S-300PMU-2 (SA-20B Gargoyle) Complex  
 This incremental upgrade from the S-300PMU-1 features improved ABM capability and increased range.  
 All components labelled as SA-20B in the mission editor. 3D models by ERO.  
-
-### S-300PS (SA-10B Grumble) Complex  
-This variant of the SA-10 has improved guidance and kinematics compared to the version included with DCS, as well as a brand new set of 3D models by ERO.  
-All components labelled as SA-10B in the mission editor.  
 
 ### Polyana-D4M1 C2 Vehicle
 This wheeled command vehicle is perfect for Skynet users to use as a node for their IADS.  
@@ -30,12 +25,6 @@ The S-300V was a tracked, mobile area defense SAM with a particular focus on cou
 ### S-300VM (SA-23 Gladiator/Giant) Complex (contributed by LetMePickThat)
 This upgraded variant of the S-300V features Track-Via-Missile guidance and the extremely capable 9M82M anti-ballstic missile, in addition to the 9M83M missile, all on a tracked chassis.    
 All components labelled as SA-23 in the mission editor, complete with custom 3D models created by ERO.  
-
-### 5V55RUD Missile for the S-300PS (SA-10c) complex  
-This upgraded missile has improved guidance from the original 5V55R, increasing its effective range vs. aircraft significantly.  
-Maximum range increased to 90km.  
-Available in the mission editor via the dedicated SA-10 (5V55RUD) launchers.  
-Can be used with either the SA-20 or SA-10B complexes.  
 
 ### 9K317 Buk-M1-2 (SA-17 Grizzly) Transporter/Erector/Launcher and Radar, 9A310M1-2  
 This upgraded Buk TELAR carries a more capable radar, and fires the 9M317 missiles, which is longer-ranged and more agile than the original 9M38 Buk missile.  
@@ -65,14 +54,14 @@ The 9K34 system was a major improvement over the previous 9K32 Strela-2, featuri
 It saw service around the world from the late 1970s onward.  
 Selectable in the mission editor as the SAM SA-14 Strela-3.  
 
-### SON-9 Fire Can AAA Director with KS-19 AAA Gun
-The SON-9/KS-19 combination was a potent Soviet heavy AAA system with radar guidance.  
-Selectable in the mission editor as: AAA SON-9 Fire Can, AAA 100mm KS-19  
-Currently using 3D models from the Silkworm radar and Flak 18.  
-Thanks to Hextopia for the implementation.  
+## Version history
 
-## Version history  
-
+#### V 2.0.0 2023-11-04 -  
+Removed KS-19, Fire Can, S-300PS as they have become obsolete with recent DCS changes  
+Fixed IC-compliance issue with DCS 2.9  
+Updated SA-20 variants to use ED's updated flight model for the 48N6  
+Added support for masted & trailer-mounted 19J6 search radar to SA-20 variants  
+Minor changes to S-300V flight models  
 #### V 1.4.2 2021-04-27 -  
 Added PDF guide, added 51P6a and 92N6 models  
 fixed bug with S-300VM guidance  
