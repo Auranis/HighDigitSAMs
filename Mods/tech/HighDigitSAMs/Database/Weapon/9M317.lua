@@ -25,7 +25,8 @@ end
 
 local SA9M317 = {
 	Name = SA9M317, --9M317 Buk-M1-2
-	display_name = _('9M317 SA-17'),
+	display_name = _('9M317 Buk-M2 (SA-17 Grizzly)'),
+	display_name_short = _('9M317 Buk-M2 (SA-17 Grizzly)'),
 	name = "SA9M317",
 	Escort = 3,
 	Head_Type = 6,
