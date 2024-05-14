@@ -60,7 +60,7 @@ local SA48N6 = {
 		0.01, -- Cy_k1 bar Cy0 at supersonic (M >> 1)
 		0.21, -- Cy_k2 steepness of the decline (front) behind the wave crisis
 
-		0.3, -- 7 Alfa_max maximum balancing angle, radians
+		0.35, -- 7 Alfa_max maximum balancing angle, radians
 		3, -- angular velocity created by the moment of gas rudders
 
 		--t_statr 	t_b 	t_accel 	t_march 	t_inertial 	t_break 	t_end
@@ -100,7 +100,7 @@ local SA48N6 = {
 	Name = SA48N6, --48N6
 	Nr_max = 25, -- Maximum g when turning
 	OmViz_max = 99.9, -- line-of-sight speed limit
-	PN_gain = 6.0,
+	PN_gain = 7.60,
 	Range_max = 150000, -- Max range in meters
 	Reflection = 0.2,
 	X_back = -5.681,
