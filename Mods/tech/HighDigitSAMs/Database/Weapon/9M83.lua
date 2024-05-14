@@ -25,7 +25,8 @@ end
 
 local SA9M83 = {
 	Name = SA9M83,
-	display_name = _('SA9M83'),
+	display_name = _('9M83 S-300V (SA-12A Giant)'),
+	display_name_short = _('9M83 S-300V (SA-12A Giant)'),
 	name = "SA9M83",
 	Escort = 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
 	Head_Type = 8, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
