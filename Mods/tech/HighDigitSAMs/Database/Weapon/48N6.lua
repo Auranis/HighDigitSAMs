@@ -42,12 +42,65 @@ local SA48N6 = {
 	KillDistance = 25,
 	Life_Time = 200, -- Battery life
 	M = 1780, -- Mass of the missile at launch
-	Mach_max = 8.6, -- maximum Mach of the missile. 
-	ModelData = { 58, 2.1, 0.047, 0.092, 0.014, -0.015, 0.72, 1.13, 0.8, 0.01, 0.21, 0.3, 3, 0.9, 0, 11.2, 0, 0, 0, 1000000000, 0, 0, 93.75, 0, 0, 0, 0, 0, 0, 230000, 0, 0, 0, 0, 1000000000, 200, 0, 0.5, 1000000000, 1000000000, 0, 650, 25, 1.19, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+	Mach_max = 8.5, -- maximum Mach of the missile. 
+	ModelData = { 
+		58, -- model params count
+		2.1,  -- characteristic square
+
+		-- Cx dependent parameters
+		0.047, -- Cx_k0 bar Cx0 on subsonic (M << 1)
+		0.092,  -- Cx_k1 height of the peak of the wave crisis 
+		0.014,  -- Cx_k2 steepness of the front on the approach to the wave crisis
+		-0.015, -- Cx_k3 bar Cx0 at supersonic (M >> 1)
+		0.72,  -- Cx_k4 steepness of the decline after the wave crisis
+		1.13, -- coefficient of dumping of a polar
+
+		-- Cy dependent parameters
+		0.8, --Cy_k0 bar Сy0 at subsonic (M << 1)
+		0.01, -- Cy_k1 bar Cy0 at supersonic (M >> 1)
+		0.21, -- Cy_k2 steepness of the decline (front) behind the wave crisis
+
+		0.3, -- 7 Alfa_max maximum balancing angle, radians
+		3, -- angular velocity created by the moment of gas rudders
+
+		--t_statr 	t_b 	t_accel 	t_march 	t_inertial 	t_break 	t_end
+		0.9, 		0, 		11.2, 		0, 			0, 			0, 			1000000000,  	-- time of stage, sec
+		0, 			0, 		93.75, 		0, 			0, 			0, 			0, 				-- fuel flow rate, kg/sec
+		0, 			0, 		230000, 	0, 			0, 			0, 			0, 				-- thrust, newtons
+		
+		1000000000, --self destruct by timer
+		200, --onboard power system operation time, sec
+		0, -- absolute self-destruction altitude. Altitude of the radio fuse triggering self destruct. 
+		1.0, -- control switch-on delay after launch, sec 
+		18520, -- 10nmi. Range to the target at the moment of launch, above which the missile will boost to climb.
+		36000, -- 15nmi. The range to the target at any given moment, below which the missile will end the boost phase and switch to pronav
+		0, -- sine of the elevation angle of the trajectory of the slide. 
+		650, -- longitude acceleration of the fuse cocking
+		25, -- speed module reported by the ejection device, expelling charge, etc.
+		1.19, -- characteristic of the ACS-RAKETA system, the coefficient of the second order filter K0
+		1,  -- characteristic of the SAU-RAKETA system, second-order filter coefficient K1
+		2, -- characteristic of the SAU-RAKETA system, bandwidth of the control loop
+		
+		-- DLZ. Data for calculating launch ranges (indication on the sight), also used by AI
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0
+	},
+
 	Name = SA48N6, --48N6
 	Nr_max = 25, -- Maximum g when turning
 	OmViz_max = 99.9, -- line-of-sight speed limit
-	--PN_gain = 1,
+	PN_gain = 6.0,
 	Range_max = 150000, -- Max range in meters
 	Reflection = 0.2,
 	X_back = -5.681,
@@ -66,16 +119,9 @@ local SA48N6 = {
 	t_acc = 11.2, -- motor burn time
 	t_b = 0.9, -- Motor start delay
 	t_marsh = 0, -- cruise time, 0.0 if not applicable
-	v_mid = 1000,
+	v_mid = 950,
 	v_min = 170,
 	warhead = simple_aa_warhead(143.0),
-
-    PN_coeffs = {
-       4,                 -- Number of Entries
-       2000.0 ,1.0,       -- Less 2 km to target use lead pursuit
-       10000.0, 0.5,      -- Between 10 and 2 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-       30000.0, 0.2,      -- Between 30 and 10 km  to target, Pn smoothly changes from 0.1 to 0.5. 
-    }; --Longer then 30 km missile files pure pursuit.
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
 	{
