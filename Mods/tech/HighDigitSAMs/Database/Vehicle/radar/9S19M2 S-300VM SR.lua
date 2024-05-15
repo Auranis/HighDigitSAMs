@@ -68,7 +68,8 @@ GT.Sensors = { RADAR = GT.Name };
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;
 GT.mapclasskey = "P0091000083";
-GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,RLO_9C19M2,
+GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,
+                RLO_9C19M2, -- RLO 9C19M2, RWR: HS, HARM Code: 106
 				"LR SAM",
 				"SAM SR",
 				"RADAR_BAND1_FOR_ARM",

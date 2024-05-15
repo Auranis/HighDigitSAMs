@@ -90,6 +90,7 @@ GT.DetectionRange  = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;
 GT.mapclasskey = "P0091000083";
 GT.attribute = {wsType_Ground,wsType_SAM,wsType_Radar,
+				RLS_9C32_1, -- RLS 9C32 1, RWR: 12, HARM Code: 112
 				"LR SAM",
 				"SAM TR",
 				"RADAR_BAND1_FOR_ARM",
