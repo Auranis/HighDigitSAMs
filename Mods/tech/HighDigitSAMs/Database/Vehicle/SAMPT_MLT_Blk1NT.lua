@@ -81,7 +81,7 @@ GT.Rate = 10;
 GT.EPLRS = true
 
 GT.DetectionRange = 0;
-GT.ThreatRange = 120000;
+GT.ThreatRange = 150000;
 GT.mapclasskey = "P0091000079";
 GT.attribute = {wsType_Ground, wsType_SAM, wsType_Miss, WSTYPE_PLACEHOLDER, 
 	"AA_missile",
