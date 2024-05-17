@@ -500,20 +500,20 @@ ARABEL =
             scan_volume =
             {
                 azimuth = {-180.0, 180.0},
-                elevation = {-15.0, 60.0}
+                elevation = {-10.0, 75.0}
             },
             max_measuring_distance = 220000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 100000.0,
-                    [ASPECT_TAIL_ON] = 100000.0
+                    [ASPECT_HEAD_ON] = 120000.0,
+                    [ASPECT_TAIL_ON] = 120000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 100000.0,
-                    [ASPECT_TAIL_ON] = 100000.0
+                    [ASPECT_HEAD_ON] = 120000.0,
+                    [ASPECT_TAIL_ON] = 120000.0
                 }
             },
             lock_on_distance_coeff = 0.9,
