@@ -64,9 +64,9 @@ local SA48N6E2 = {
 		4, -- angular velocity created by the moment of gas rudders
 		
 		--t_statr 	t_b 	t_accel 	t_march 	t_inertial 	t_break 	t_end
-		0.9, 		0, 		11.2, 		0, 			0, 			0, 			1000000000, -- time of stage, sec
+		0.9, 		0, 		12.2, 		0, 			0, 			0, 			1000000000, -- time of stage, sec
 		0, 			0, 		93.75, 		0, 			0, 			0, 			0, 			-- fuel flow rate, kg/sec
-		0, 			0, 		240000, 	0, 			0, 			0, 			0, 			-- thrust, newtons
+		0, 			0, 		215000, 	0, 			0, 			0, 			0, 			-- thrust, newtons
 		
 		1000000000, --self destruct by timer
 		200, --onboard power system operation time, sec
@@ -100,7 +100,7 @@ local SA48N6E2 = {
 	Name = SA48N6E2, --48N6
 	Nr_max = 25, -- Maximum g when turning
 	OmViz_max = 99.9, -- line-of-sight speed limit
-	PN_gain = 11,
+	PN_gain = 9,
 	Range_max = 200000, -- Max range in meters
 	Reflection = 0.2,
 	X_back = -5.681,
@@ -116,7 +116,7 @@ local SA48N6E2 = {
 	nozzle_exit_area = 0.148,
 	sigma = { 50, 50, 50 },
 	supersonic_A_coef_skew = 0.17,
-	t_acc = 11.2, -- motor burn time
+	t_acc = 12.2, -- motor burn time
 	t_b = 0.9, -- Motor start delay
 	t_marsh = 0, -- cruise time, 0.0 if not applicable
 	v_mid = 1000,
