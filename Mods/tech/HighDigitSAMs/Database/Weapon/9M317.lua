@@ -64,7 +64,8 @@ local SA9M317 = {
 	KillDistance = 13,
 	ccm_k0       = 0.5,
     PN_coeffs = {
-        3,                 -- Number of Entries
+        4,                 -- Number of Entries
+		0, 1.0,
         7408.0 ,1.0,       -- Less 7.4 km to target Pn = 1
         10000.0, 0.5,      -- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
     	25000.0, 0.3
