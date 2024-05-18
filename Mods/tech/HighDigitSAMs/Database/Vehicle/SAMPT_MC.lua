@@ -25,7 +25,7 @@ GT.visual.agony_explosion_size = 5
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 400000;
 GT.sensor.min_range_finding_target = 10;
-GT.sensor.max_alt_finding_target = 50000;
+GT.sensor.max_alt_finding_target = 100000;
 GT.sensor.height = 5.895;
 
 GT.WS = {}

@@ -57,31 +57,31 @@ GT.WS[ws].angles = {
 GT.WS[ws].moveable = false;
 GT.WS[ws].reference_angle_Z = math.rad(90);
 
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.Aster30_1NT);
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.Aster30_2);
 __LN.depends_on_unit = {{{"SAMPT_MRI_ARABEL", "SAMPT_ME", "SAMPT_MC"},},{{"SAMPT_MRI_GF300", "SAMPT_ME", "SAMPT_MC"},},};
 
 __LN.BR = {
-	{pos = {5.3, 6.675, -0.975}, drawArgument = 1},
-	{pos = {5.3, 6.675, -0.35}, drawArgument = 2},
-	{pos = {5.3, 6.675, 0.35}, drawArgument = 3},
-	{pos = {5.3, 6.675, 0.975}, drawArgument = 4},
-	{pos = {5.3, 7.26, -0.975}, drawArgument = 5},
-	{pos = {5.3, 7.26, -0.35}, drawArgument = 6},
-	{pos = {5.3, 7.26, 0.35}, drawArgument = 7},
-	{pos = {5.3, 7.26, 0.975}, drawArgument = 8},
+	{pos = {6.475, 6.675, -0.975}, drawArgument = 1},
+	{pos = {6.475, 6.675, -0.35}, drawArgument = 2},
+	{pos = {6.475, 6.675, 0.35}, drawArgument = 3},
+	{pos = {6.475, 6.675, 0.975}, drawArgument = 4},
+	{pos = {6.475, 7.26, -0.975}, drawArgument = 5},
+	{pos = {6.475, 7.26, -0.35}, drawArgument = 6},
+	{pos = {6.475, 7.26, 0.35}, drawArgument = 7},
+	{pos = {6.475, 7.26, 0.975}, drawArgument = 8},
 };
 
 __LN = nil;
 
-GT.Name = "SAMPT_MLT_Blk1NT";
-GT.DisplayName = _('SAMP/T MLT Launcher Block 1NT');
-GT.DisplayNameShort = _("SAMP/T MLT Blk 1NT");
+GT.Name = "SAMPT_MLT_Blk2";
+GT.DisplayName = _('SAMP/T MLT Launcher Block 2');
+GT.DisplayNameShort = _("SAMP/T MLT Blk 2");
 GT.Rate = 10;
 
 GT.EPLRS = true
 
 GT.DetectionRange = 0;
-GT.ThreatRange = 150000;
+GT.ThreatRange = 300000;
 GT.mapclasskey = "P0091000079";
 GT.attribute = {wsType_Ground, wsType_SAM, wsType_Miss, WSTYPE_PLACEHOLDER, 
 	"AA_missile",

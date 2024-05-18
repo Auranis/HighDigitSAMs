@@ -32,7 +32,7 @@ GT.visual.agony_explosion_size = 5
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 220000;
 GT.sensor.min_range_finding_target = 10;
-GT.sensor.max_alt_finding_target = 30500;
+GT.sensor.max_alt_finding_target = 100000;
 GT.sensor.height = 5;
 
 GT.WS = {}
@@ -60,7 +60,7 @@ GT.WS[ws].LN[1].distanceMin = 100;
 GT.WS[ws].LN[1].distanceMax = GT.sensor.max_range_finding_target;
 GT.WS[ws].LN[1].ECM_K = 0;
 GT.WS[ws].LN[1].min_trg_alt = 1;
-GT.WS[ws].LN[1].max_trg_alt = 30500;
+GT.WS[ws].LN[1].max_trg_alt = 100000;
 GT.WS[ws].LN[1].maxShootingSpeed = 0;
 
 for i = 2, 16 do

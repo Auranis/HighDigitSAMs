@@ -13,7 +13,7 @@ GT.visual.shape_dstr = "sampt_mlt_Destroyed";
 GT.swing_on_run = false
 GT.IR_emission_coeff = 0.06;
 
-GT.toggle_alarm_state_interval = 10.0;
+GT.toggle_alarm_state_interval = 0.01;
 
 GT.encyclopediaAnimation = {
 	args = {

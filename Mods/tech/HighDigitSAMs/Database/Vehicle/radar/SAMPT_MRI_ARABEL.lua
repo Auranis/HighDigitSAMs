@@ -30,13 +30,13 @@ GT.visual.max_time_agony = 120
 GT.visual.agony_explosion_size = 5
 
 GT.sensor = {};
-GT.sensor.max_range_finding_target = 220000;
+GT.sensor.max_range_finding_target = 120000;
 GT.sensor.min_range_finding_target = 10;
-GT.sensor.max_alt_finding_target = 30500;
+GT.sensor.max_alt_finding_target = 100000;
 GT.sensor.height = 5;
 
 GT.WS = {}
-GT.WS.maxTargetDetectionRange = 220000;
+GT.WS.maxTargetDetectionRange = GT.sensor.max_range_finding_target;
 GT.WS.radar_type = 102;
 GT.WS.radar_rotation_type = 1;
 GT.WS.requiredUnits = {{"SAMPT_MGE", 1000, GT_t.REQUIRED_UNIT.NEED_AI_ON}};
@@ -60,7 +60,7 @@ GT.WS[ws].LN[1].distanceMin = 100;
 GT.WS[ws].LN[1].distanceMax = GT.sensor.max_range_finding_target;
 GT.WS[ws].LN[1].ECM_K = 0;
 GT.WS[ws].LN[1].min_trg_alt = 1;
-GT.WS[ws].LN[1].max_trg_alt = 30500;
+GT.WS[ws].LN[1].max_trg_alt = 100000;
 GT.WS[ws].LN[1].maxShootingSpeed = 0;
 
 for i = 2, 16 do
@@ -89,7 +89,7 @@ GT.Sensors = {RADAR = "SAMP/T ARABEL str",};
 
 GT.EPLRS = true;
 
-GT.DetectionRange = 220000;
+GT.DetectionRange = GT.sensor.max_range_finding_target;
 GT.ThreatRange = 0;
 GT.mapclasskey = "P0091000083";
 GT.attribute = {
