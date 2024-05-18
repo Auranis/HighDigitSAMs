@@ -63,7 +63,7 @@ GT.WS[ws].LN[1].min_trg_alt = 1;
 GT.WS[ws].LN[1].max_trg_alt = 100000;
 GT.WS[ws].LN[1].maxShootingSpeed = 0;
 
-for i = 2, 16 do
+for i = 2, 48 do
     ws = GT_t.inc_ws();
     GT.WS[ws] = {};
     GT.WS[ws].pos = {0, 0, 0};
