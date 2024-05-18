@@ -1,4 +1,4 @@
--- aster 30 block 1nt by zahnatom
+-- aster 30 block 1 by zahnatom
 
 local nameaster301 = "Aster 30 Blk 1NT"
 SAMPT_ASTER_30_Blk_1NT = {
@@ -11,7 +11,7 @@ SAMPT_ASTER_30_Blk_1NT = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {10, 10, 10},
+	sigma 			= {7.5, 7.5, 7.5},
     M 				= 450.0,
     H_max 			= 25000.0,
     H_min 			= 3.0,
@@ -35,7 +35,7 @@ SAMPT_ASTER_30_Blk_1NT = {
     Fi_excort    	= 2.0,
     Fi_search    	= 99.9, --search angle limit
     OmViz_max    	= 99.9, --search line speed limit
-	exhaust1 	 	= { 1, 1, 1, 1},
+	exhaust1 	 	= { 1, 0.8, 0.2, 1},
     X_back       	= -0.55,
     Y_back       	= 0.0,
     Z_back       	= 0.0,	
@@ -44,15 +44,15 @@ SAMPT_ASTER_30_Blk_1NT = {
     Y_back_acc 	 	= 0.0,
     Z_back_acc 	 	= 0.0,	
     Reflection 		= 0.1,
-    KillDistance 	= 20.0,
+    KillDistance 	= 15.0,
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.2,	
 	
 	active_radar_lock_dist	= 200000.0,
-	go_active_by_default	= 1,	
+	go_active_by_default	= 0,	
 
 	PN_coeffs = {3, 				-- Number of Entries
-				50000.0 ,1.0,		-- Less 5 km to target Pn = 1
+				5000.0 ,1.0,		-- Less 5 km to target Pn = 1
 				100000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
 				200000.0, 0.25};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
 

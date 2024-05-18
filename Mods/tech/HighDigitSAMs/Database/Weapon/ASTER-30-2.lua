@@ -1,4 +1,4 @@
--- aster 30 block 2 by zahnatom
+-- aster 30 block 1 by zahnatom
 
 local nameaster301 = "Aster 30 Blk 2"
 SAMPT_ASTER_30_Blk_2 = {
@@ -11,19 +11,19 @@ SAMPT_ASTER_30_Blk_2 = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {5, 5, 5},
+	sigma 			= {2.5, 2.5, 2.5},
     M 				= 750.0,
     H_max 			= 100000.0,
     H_min 			= 25000.0,
-    Diam 			= 180.0,
+    Diam 			= 450.0,
     Cx_pil 			= 1,
     D_max 			= 300000.0,
     D_min 			= 2500.0,
     Head_Form 		= 1,
     Life_Time 		= 360.0,
-    Nr_max 			= 60,
+    Nr_max 			= 75,
     v_min 			= 50.0,
-    v_mid 			= 1800.0,
+    v_mid 			= 7000.0,
     Mach_max 		= 10.0,
     t_b 			= 0.0,
     t_acc 			= 15.0,
@@ -48,15 +48,15 @@ SAMPT_ASTER_30_Blk_2 = {
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.2,	
 	
-	active_radar_lock_dist	= 200000.0,
-	go_active_by_default	= 1,	
+	active_radar_lock_dist	= 300000.0,
+	go_active_by_default	= 0,	
 
 	PN_coeffs = {3, 				-- Number of Entries
 				100000.0 ,1.0,		-- Less 5 km to target Pn = 1
 				200000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-				300000.0, 0.125};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
+				300000.0, 0.25};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
 
-	warhead = enhanced_a2a_warhead(30.0); 
+	warhead = enhanced_a2a_warhead(75.0); 
 
     shape_table_data = {
         {

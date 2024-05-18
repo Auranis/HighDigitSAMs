@@ -11,7 +11,7 @@ SAMPT_ASTER_30_Blk_1 = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {15, 15, 15},
+	sigma 			= {10, 10, 10},
     M 				= 450.0,
     H_max 			= 20000.0,
     H_min 			= 3.0,
@@ -35,7 +35,7 @@ SAMPT_ASTER_30_Blk_1 = {
     Fi_excort    	= 2.0,
     Fi_search    	= 99.9, --search angle limit
     OmViz_max    	= 99.9, --search line speed limit
-	exhaust1 	 	= { 1, 1, 1, 1},
+	exhaust1 	 	= { 1, 0.8, 0.2, 1},
     X_back       	= -0.55,
     Y_back       	= 0.0,
     Z_back       	= 0.0,	
@@ -44,12 +44,12 @@ SAMPT_ASTER_30_Blk_1 = {
     Y_back_acc 	 	= 0.0,
     Z_back_acc 	 	= 0.0,	
     Reflection 		= 0.1,
-    KillDistance 	= 20.0,
+    KillDistance 	= 15.0,
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.2,	
 	
 	active_radar_lock_dist	= 150000.0,
-	go_active_by_default	= 1,	
+	go_active_by_default	= 0,	
 
 	PN_coeffs = {3, 				-- Number of Entries
 				50000.0 ,1.0,		-- Less 5 km to target Pn = 1
