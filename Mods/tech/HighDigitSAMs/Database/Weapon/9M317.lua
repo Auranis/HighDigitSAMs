@@ -65,10 +65,10 @@ local SA9M317 = {
 	ccm_k0       = 0.5,
     PN_coeffs = {
         3,                 -- Number of Entries
-        7408.0 ,1.0,       -- Less 4 NM to target Pn = 1
+        7408.0 ,1.0,       -- Less 7.4 km to target Pn = 1
         10000.0, 0.5,      -- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
     	25000.0, 0.3
-    }; -- Between 15 and 8 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 15 km Pn = 0.2.
+    }; -- Between 25 and 10 km  to target, Pn smoothly changes from 0.3 to 0.5. Longer then 25 km Pn = 0.3.
 	category = CAT_MISSILES,
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
