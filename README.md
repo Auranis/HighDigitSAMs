@@ -6,6 +6,20 @@ Simply copy the Mods folder into your C:\Username\Saved Games\DCS folder, or use
 
 ## Current features  
 
+### SAMP/T Complex
+This is the ground version of the Aster series of missiles. These also exist on ships like on the British Type 45 destroyer.
+For a battery you need the MGE, ME, MC, one of the radars and of course at least one launcher.
+One battery can have up to 8 launchers IRL.
+## Radars
+There is the ARABEL radar which is most common but has lacking performance for ballistic intercepts
+There is also the Ground Fire 300 radar which has greatly increased performance and just much better
+## Missiles
+Modeled right now are the Aster 30 Block 1, Block 1NT and Block 2
+Block 1 is good up to 20km in altitude and 120km in range
+Block 1NT gives it a better seeker and possibly a better booster increasing the altitude coverage to 25km and the range to 150km
+Block 2 is completely different and more akin to the US' THAAD. It can intercept targets up to 300km away and up to 100km in altitude
+keep in mind that this has to be modeled within DCS' restrictions so its not entirely accurate to what it could do IRL
+
 ### S-300PMU-1 (SA-20A Gargoyle) Complex  
 This upgraded version of the S-300 added ABM capability and the long range 48N6 missile to the advanced S-300 complex.  
 All components labelled as SA-20A in the mission editor.  
