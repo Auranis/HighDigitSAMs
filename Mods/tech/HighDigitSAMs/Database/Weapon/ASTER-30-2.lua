@@ -1,4 +1,4 @@
--- aster 30 block 1 by zahnatom
+-- aster 30 block 2 by zahnatom
 
 local nameaster301 = "Aster 30 Blk 2"
 SAMPT_ASTER_30_Blk_2 = {
