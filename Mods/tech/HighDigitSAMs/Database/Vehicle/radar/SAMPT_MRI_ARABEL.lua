@@ -11,7 +11,7 @@ GT.swing_on_run = false
 GT.IR_emission_coeff = 0.06
 GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, {0, 0}, IR_COEFFS_BODY, {0.18, 0.18/800}}}
 
--- GT.toggle_alarm_state_interval = 10;
+GT.toggle_alarm_state_interval = 0.01;
 
 GT.animation_arguments.locator_rotation = 1;
 GT.radar_rotation_period = 1;

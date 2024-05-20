@@ -61,14 +61,14 @@ __LN = add_launcher(GT.WS[ws], GT_t.LN_t.Aster30_1NT);
 __LN.depends_on_unit = {{{"SAMPT_MRI_ARABEL", "SAMPT_ME", "SAMPT_MC"},},{{"SAMPT_MRI_GF300", "SAMPT_ME", "SAMPT_MC"},},};
 
 __LN.BR = {
-	{pos = {5.3, 6.675, -0.975}, drawArgument = 1},
-	{pos = {5.3, 6.675, -0.35}, drawArgument = 2},
-	{pos = {5.3, 6.675, 0.35}, drawArgument = 3},
-	{pos = {5.3, 6.675, 0.975}, drawArgument = 4},
-	{pos = {5.3, 7.26, -0.975}, drawArgument = 5},
-	{pos = {5.3, 7.26, -0.35}, drawArgument = 6},
-	{pos = {5.3, 7.26, 0.35}, drawArgument = 7},
-	{pos = {5.3, 7.26, 0.975}, drawArgument = 8},
+	{pos = {5.3, 6.675, -0.975},	drawArgument = 11},
+	{pos = {5.3, 6.675, -0.35},		drawArgument = 12},
+	{pos = {5.3, 6.675, 0.35}, 		drawArgument = 13},
+	{pos = {5.3, 6.675, 0.975}, 	drawArgument = 14},
+	{pos = {5.3, 7.26, -0.975}, 	drawArgument = 15},
+	{pos = {5.3, 7.26, -0.35}, 		drawArgument = 16},
+	{pos = {5.3, 7.26, 0.35}, 		drawArgument = 17},
+	{pos = {5.3, 7.26, 0.975}, 		drawArgument = 18},
 };
 
 __LN = nil;
