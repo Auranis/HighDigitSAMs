@@ -46,7 +46,7 @@ GT.visual.agony_explosion_size = 19;
 -- weapon systems
 
 GT.WS = {};
-GT.WS.maxTargetDetectionRange = 250000;
+GT.WS.maxTargetDetectionRange = 400000;
 
 local ws = GT_t.inc_ws();
 GT.WS[ws] = {};
@@ -58,7 +58,7 @@ GT.WS[ws].moveable = false;
 GT.WS[ws].reference_angle_Z = math.rad(90);
 
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.Aster30_2);
-__LN.depends_on_unit = {{{"SAMPT_MRI_ARABEL", "SAMPT_ME", "SAMPT_MC"},},{{"SAMPT_MRI_GF300", "SAMPT_ME", "SAMPT_MC"},},};
+__LN.depends_on_unit = {{{"SAMPT_MRI_ARABEL", "SAMPT_ME"},},{{"SAMPT_MRI_GF300", "SAMPT_ME"},},};
 
 __LN.BR = {
 	{pos = {6.475, 6.675, -0.975}, 		drawArgument = 11},
@@ -81,7 +81,7 @@ GT.Rate = 10;
 GT.EPLRS = true
 
 GT.DetectionRange = 0;
-GT.ThreatRange = 300000;
+GT.ThreatRange = 200000;
 GT.mapclasskey = "P0091000079";
 GT.attribute = {wsType_Ground, wsType_SAM, wsType_Miss, WSTYPE_PLACEHOLDER, 
 	"AA_missile",

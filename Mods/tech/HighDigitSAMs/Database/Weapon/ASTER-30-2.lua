@@ -11,25 +11,25 @@ SAMPT_ASTER_30_Blk_2 = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {2.5, 2.5, 2.5},
+	sigma 			= {5, 5, 5},
     M 				= 750.0,
-    H_max 			= 100000.0,
-    H_min 			= 25000.0,
+    H_max 			= 70000.0,
+    H_min 			= 20000.0,
     Diam 			= 450.0,
     Cx_pil 			= 1,
-    D_max 			= 300000.0,
-    D_min 			= 2500.0,
+    D_max 			= 200000.0,
+    D_min 			= 10000.0,
     Head_Form 		= 1,
     Life_Time 		= 360.0,
     Nr_max 			= 75,
     v_min 			= 50.0,
-    v_mid 			= 7000.0,
-    Mach_max 		= 10.0,
+    v_mid 			= 8500.0,
+    Mach_max 		= 7.0,
     t_b 			= 0.0,
-    t_acc 			= 15.0,
+    t_acc 			= 25.0,
     t_marsh 		= 30.0,
-    Range_max 		= 300000.0,
-    H_min_t 		= 10000.0,
+    Range_max 		= 200000.0,
+    H_min_t 		= 5000.0,
     Fi_start     	= 3.14152, -- angle of tracking at firing
     Fi_rak       	= 3.14152,
     Fi_excort    	= 2.0,
@@ -46,15 +46,15 @@ SAMPT_ASTER_30_Blk_2 = {
     Reflection 		= 0.1,
     KillDistance 	= 20.0,
 	tail_scale 	 	= 1.4,		
-	ccm_k0 			= 0.2,	
+	ccm_k0 			= 0.1,	
 	
-	active_radar_lock_dist	= 300000.0,
+	active_radar_lock_dist	= 400000.0,
 	go_active_by_default	= 0,	
 
 	PN_coeffs = {3, 				-- Number of Entries
-				100000.0 ,1.0,		-- Less 5 km to target Pn = 1
-				200000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-				300000.0, 0.25};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
+				25000.0 ,1.0,		-- Less 5 km to target Pn = 1
+				100000.0, 0.8,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
+				200000.0, 0.75};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
 
 	warhead = enhanced_a2a_warhead(75.0); 
 
@@ -73,16 +73,18 @@ SAMPT_ASTER_30_Blk_2 = {
 
 declare_weapon(SAMPT_ASTER_30_Blk_2)
 
+GT_t.WS_t.Aster30_2 = {name = "Aster 30 Blk 2", display_name = _("Aster 30 Blk 2")};
+
 GT_t.LN_t.Aster30_2 = {}; 
 GT_t.LN_t.Aster30_2.type = 4;
-GT_t.LN_t.Aster30_2.distanceMin = 2500;
-GT_t.LN_t.Aster30_2.distanceMax = 300000;
-GT_t.LN_t.Aster30_2.min_trg_alt = 25000;
-GT_t.LN_t.Aster30_2.max_trg_alt = 100000;
-GT_t.LN_t.Aster30_2.reactionTime = 0.1;
+GT_t.LN_t.Aster30_2.distanceMin = 10000;
+GT_t.LN_t.Aster30_2.distanceMax = 200000;
+GT_t.LN_t.Aster30_2.min_trg_alt = 20000;
+GT_t.LN_t.Aster30_2.max_trg_alt = 70000;
+GT_t.LN_t.Aster30_2.reactionTime = 1.0;
 GT_t.LN_t.Aster30_2.launch_delay = 0.1;
 GT_t.LN_t.Aster30_2.reflection_limit = 0.0001;
-GT_t.LN_t.Aster30_2.ECM_K = 0
+GT_t.LN_t.Aster30_2.ECM_K = 0.1
 GT_t.LN_t.Aster30_2.max_number_of_missiles_channels = 1;
 GT_t.LN_t.Aster30_2.sensor = {};
 set_recursive_metatable(GT_t.LN_t.Aster30_2.sensor, GT_t.WSN_t[0]);
@@ -90,8 +92,8 @@ GT_t.LN_t.Aster30_2.external_tracking_awacs = false;
 GT_t.LN_t.Aster30_2.show_external_missile = false;
 GT_t.LN_t.Aster30_2.PL = {};
 GT_t.LN_t.Aster30_2.PL[1] = {};
-GT_t.LN_t.Aster30_2.PL[1].switch_on_delay = 0.1;
-GT_t.LN_t.Aster30_2.PL[1].shot_delay = 0.1;
+GT_t.LN_t.Aster30_2.PL[1].switch_on_delay = 1.0;
+GT_t.LN_t.Aster30_2.PL[1].shot_delay = 1.0;
 GT_t.LN_t.Aster30_2.PL[1].ammo_capacity = 8;
 GT_t.LN_t.Aster30_2.PL[1].type_ammunition = SAMPT_ASTER_30_Blk_2.wsTypeOfWeapon;
 GT_t.LN_t.Aster30_2.PL[1].reload_time = 3600;

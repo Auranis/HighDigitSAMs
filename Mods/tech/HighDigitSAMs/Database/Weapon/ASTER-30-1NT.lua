@@ -11,7 +11,7 @@ SAMPT_ASTER_30_Blk_1NT = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {7.5, 7.5, 7.5},
+	sigma 			= {10, 10, 10},
     M 				= 450.0,
     H_max 			= 25000.0,
     H_min 			= 3.0,
@@ -24,7 +24,7 @@ SAMPT_ASTER_30_Blk_1NT = {
     Nr_max 			= 60,
     v_min 			= 50.0,
     v_mid 			= 1800.0,
-    Mach_max 		= 5.0,
+    Mach_max 		= 4.5,
     t_b 			= 0.0,
     t_acc 			= 5.0,
     t_marsh 		= 22.5,
@@ -73,14 +73,16 @@ SAMPT_ASTER_30_Blk_1NT = {
 
 declare_weapon(SAMPT_ASTER_30_Blk_1NT)
 
+GT_t.WS_t.Aster30_1NT = {name = "Aster 30 Blk 1NT", display_name = _("Aster 30 Blk 1NT")};
+
 GT_t.LN_t.Aster30_1NT = {}; 
 GT_t.LN_t.Aster30_1NT.type = 4;
 GT_t.LN_t.Aster30_1NT.distanceMin = 1000;
 GT_t.LN_t.Aster30_1NT.distanceMax = 150000;
-GT_t.LN_t.Aster30_1NT.reactionTime = 0.1;
+GT_t.LN_t.Aster30_1NT.reactionTime = 1.0;
 GT_t.LN_t.Aster30_1NT.launch_delay = 0.1;
 GT_t.LN_t.Aster30_1NT.reflection_limit = 0.0001;
-GT_t.LN_t.Aster30_1NT.ECM_K = 0
+GT_t.LN_t.Aster30_1NT.ECM_K = 0.1
 GT_t.LN_t.Aster30_1NT.max_number_of_missiles_channels = 1;
 GT_t.LN_t.Aster30_1NT.sensor = {};
 set_recursive_metatable(GT_t.LN_t.Aster30_1NT.sensor, GT_t.WSN_t[0]);

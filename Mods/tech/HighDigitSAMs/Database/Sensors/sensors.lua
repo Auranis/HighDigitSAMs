@@ -551,11 +551,11 @@ GROUND_FIRE_300 =
                     [ASPECT_TAIL_ON] = 400000.0
                 }
             },
-            lock_on_distance_coeff = 0.9,
-			multiple_targets_tracking = true,
+            lock_on_distance_coeff = 0.95,
+			-- multiple_targets_tracking = true,
             velocity_limits =
             {
-                radial_velocity_min = 15.0,
+                radial_velocity_min = 10.0,
             },
             scan_period = 1.0,
         }

@@ -1,7 +1,3 @@
-# NOTE:
-There are some problems right now resulting in ballistic missiles like Scuds not being intercepted
-I dont have a fix yet. Hopefully soon though
-
 # HighDigitSAMs
 A simple, IC-compliant mod for DCS to add more SAM systems to the game, both modern and historical.  
 
