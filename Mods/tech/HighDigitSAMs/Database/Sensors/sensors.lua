@@ -552,7 +552,7 @@ GROUND_FIRE_300 =
                 }
             },
             lock_on_distance_coeff = 0.95,
-			-- multiple_targets_tracking = true,
+			multiple_targets_tracking = true,
             velocity_limits =
             {
                 radial_velocity_min = 10.0,

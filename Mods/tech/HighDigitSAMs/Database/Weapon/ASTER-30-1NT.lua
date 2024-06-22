@@ -85,7 +85,9 @@ GT_t.LN_t.Aster30_1NT.reflection_limit = 0.0001;
 GT_t.LN_t.Aster30_1NT.ECM_K = 0.1
 GT_t.LN_t.Aster30_1NT.max_number_of_missiles_channels = 1;
 GT_t.LN_t.Aster30_1NT.sensor = {};
+
 set_recursive_metatable(GT_t.LN_t.Aster30_1NT.sensor, GT_t.WSN_t[0]);
+
 GT_t.LN_t.Aster30_1NT.external_tracking_awacs = false;
 GT_t.LN_t.Aster30_1NT.show_external_missile = true
 GT_t.LN_t.Aster30_1NT.PL = {};

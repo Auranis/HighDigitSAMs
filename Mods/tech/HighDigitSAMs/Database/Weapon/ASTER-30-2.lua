@@ -11,7 +11,7 @@ SAMPT_ASTER_30_Blk_2 = {
 
     Escort 			= 0,
     Head_Type 		= 2,
-	sigma 			= {5, 5, 5},
+	sigma 			= {2.5, 2.5, 2.5},
     M 				= 750.0,
     H_max 			= 70000.0,
     H_min 			= 20000.0,
@@ -23,10 +23,10 @@ SAMPT_ASTER_30_Blk_2 = {
     Life_Time 		= 360.0,
     Nr_max 			= 75,
     v_min 			= 50.0,
-    v_mid 			= 8500.0,
-    Mach_max 		= 7.0,
+    v_mid 			= 5000.0,
+    Mach_max 		= 10.0,
     t_b 			= 0.0,
-    t_acc 			= 25.0,
+    t_acc 			= 10.0,
     t_marsh 		= 30.0,
     Range_max 		= 200000.0,
     H_min_t 		= 5000.0,
@@ -44,17 +44,17 @@ SAMPT_ASTER_30_Blk_2 = {
     Y_back_acc 	 	= 0.0,
     Z_back_acc 	 	= 0.0,	
     Reflection 		= 0.1,
-    KillDistance 	= 20.0,
+    KillDistance 	= 25.0,
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.1,	
 	
-	active_radar_lock_dist	= 400000.0,
+	active_radar_lock_dist	= 200000.0,
 	go_active_by_default	= 0,	
 
 	PN_coeffs = {3, 				-- Number of Entries
-				25000.0 ,1.0,		-- Less 5 km to target Pn = 1
+				50000.0 ,1.0,		-- Less 5 km to target Pn = 1
 				100000.0, 0.8,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-				200000.0, 0.75};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
+				200000.0, 0.5};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
 
 	warhead = enhanced_a2a_warhead(75.0); 
 
@@ -87,7 +87,9 @@ GT_t.LN_t.Aster30_2.reflection_limit = 0.0001;
 GT_t.LN_t.Aster30_2.ECM_K = 0.1
 GT_t.LN_t.Aster30_2.max_number_of_missiles_channels = 1;
 GT_t.LN_t.Aster30_2.sensor = {};
+
 set_recursive_metatable(GT_t.LN_t.Aster30_2.sensor, GT_t.WSN_t[0]);
+
 GT_t.LN_t.Aster30_2.external_tracking_awacs = false;
 GT_t.LN_t.Aster30_2.show_external_missile = false;
 GT_t.LN_t.Aster30_2.PL = {};
