@@ -39,10 +39,10 @@ GT.WS[ws].LN[1].reactionTime = 1.0;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
 GT.WS[ws].LN[1].PL[1].shot_delay = 0.1;
 GT.WS[ws].LN[1].PL[1].reload_time = 7200;
-GT.WS[ws].LN[1].BR[1] = {pos = {10.05, 0.216,-1.045}, drawArgument = 3 };
-GT.WS[ws].LN[1].BR[2] = {pos = {10.05, 1.204,-0.614}, drawArgument = 4 };
-GT.WS[ws].LN[1].BR[3] = {pos = {10.05, 1.204, 0.614}, drawArgument = 2 };
-GT.WS[ws].LN[1].BR[4] = {pos = {10.05, 0.216, 1.045}, drawArgument = 3 };
+GT.WS[ws].LN[1].BR[1] = {pos = {5, 2.4,-1.4}, drawArgument = 11 };
+GT.WS[ws].LN[1].BR[2] = {pos = {5, 2.4, 1.4}, drawArgument = 12 };
+-- GT.WS[ws].LN[1].BR[3] = {pos = {10.05, 1.204, 0.614}, drawArgument = 2 };
+-- GT.WS[ws].LN[1].BR[4] = {pos = {10.05, 0.216, 1.045}, drawArgument = 3 };
 
 GT.Name = "S-300V 9A82 ln";
 GT.DisplayName = _('SAM SA-12 S-300V "Giant" TEL B');

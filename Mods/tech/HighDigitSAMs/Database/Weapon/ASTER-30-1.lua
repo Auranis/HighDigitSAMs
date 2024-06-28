@@ -97,4 +97,4 @@ GT_t.LN_t.Aster30_1.PL[1].shot_delay = 0.1;
 GT_t.LN_t.Aster30_1.PL[1].ammo_capacity = 8;
 GT_t.LN_t.Aster30_1.PL[1].type_ammunition = SAMPT_ASTER_30_Blk_1.wsTypeOfWeapon;
 GT_t.LN_t.Aster30_1.PL[1].reload_time = 3600;
-GT_t.LN_t.Aster30_1.BR = { {pos = {0,0,0}}};
+GT_t.LN_t.Aster30_1.BR = { { pos = {0, 0, 0} } };
