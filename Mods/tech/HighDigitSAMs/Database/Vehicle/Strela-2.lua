@@ -37,7 +37,7 @@ GT.DisplayNameShort = _('SA-7');
 GT.Rate = 5;
 
 GT.DetectionRange  = GT.sensor.max_range_finding_target;
-GT.ThreatRange = GT.WS[1].LN[1].distanceMax;
+GT.ThreatRange = 3200;
 GT.mapclasskey = "P0091000202";
 
 GT.attribute = {wsType_Ground,wsType_SAM,wsType_Miss,IglaRUS_1,

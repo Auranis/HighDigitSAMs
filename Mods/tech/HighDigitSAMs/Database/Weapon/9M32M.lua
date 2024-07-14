@@ -1,28 +1,3 @@
--- Missile
-local function calcPiercingMass(warhead)
-	warhead.piercing_mass  = warhead.mass;
-	if (warhead.expl_mass/warhead.mass > 0.1) then
-		warhead.piercing_mass  = warhead.mass/5.0;
-	end
-end
-
-local function simple_aa_warhead(power, caliber) -- By Saint
-    local res = {};
-
-	res.caliber = caliber
-	res.mass = power; --old explosion damage effect
-    res.expl_mass = power;
-    res.other_factors = {1, 1, 1};
-    res.obj_factors = {1, 1};
-    res.concrete_factors = {1, 1, 1};
-    res.cumulative_factor = 0;
-    res.concrete_obj_factor = 0.0;
-    res.cumulative_thickness = 0.0;
-    
-	calcPiercingMass(res)
-    return res;
-end
-
 local SA9M32M = {
 	category		= CAT_MISSILES,
 	name			= "Strela-2M",
@@ -42,7 +17,7 @@ local SA9M32M = {
 	H_min = 1.0,
 	Diam = 72.0,
 	Cx_pil = 1,
-	D_max = 4200.0, --4500.0
+	D_max = 8500.0, --Technically 4200 is Rmax, but it's a tail-chaser so 8500 is the estimated intercept distance.
 	D_min = 800.0, --500.0
 	Head_Form = 0, --1
 	Life_Time = 17.0,
@@ -53,7 +28,7 @@ local SA9M32M = {
 	t_b = 0.0,
 	t_acc = 2.0,
 	t_marsh = 4.0,
-	Range_max = 4200.0, --4500.0
+	Range_max = 8500.0, --4500.0
 	H_min_t = 10.0,
 	Fi_start = math.rad(1),
 	Fi_rak = 3.14152,
@@ -61,8 +36,8 @@ local SA9M32M = {
 	Fi_search = 99.9,
 	OmViz_max = 99.9,
 	warhead = {
-		mass					= 1.8, --1.25
-		expl_mass				= 0.37, --1.25
+		mass					= 1.8, --Enlarged from Strela-2, according to Czech army publication
+		expl_mass				= 0.6, --Conservative estimate assuming the warhead mass increase comes from lengthening only
 		caliber					= 72,
 		other_factors			= { 1.325, 1.325, 1.325 },
 		obj_factors				= { 1.325, 1.325 },
@@ -71,6 +46,7 @@ local SA9M32M = {
 		concrete_obj_factor		= 0.0,    
 		cumulative_thickness	= 0.0,
 		piercing_mass 			= 0.36, --1.25
+		fuel_dmg_coeff			= 0.48,
 		time_self_destruct		= 17,
 	},
 	warhead_air = {
@@ -84,6 +60,7 @@ local SA9M32M = {
 		concrete_obj_factor		= 0.0,    
 		cumulative_thickness	= 0.0,
 		piercing_mass 			= 0.36, --1.25
+		fuel_dmg_coeff			= 0.48,
 		time_self_destruct		= 17,
 	},
 	X_back = -0.781,
@@ -92,8 +69,8 @@ local SA9M32M = {
 	Reflection = 0.01,
 	KillDistance = 0.5,
 	--seeker sensivity params
-	SeekerSensivityDistance = 6000, -- original value 8000 The range of target with IR value = 1. In meters.
-	ccm_k0 = 1.4,  -- original value 1.0 | Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
+	SeekerSensivityDistance = 8000, -- original value 8000 The range of target with IR value = 1. In meters.
+	ccm_k0 = 3.0,  -- original value 1.0 | Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
 	SeekerCooled			= false, -- original value true | True is cooled seeker and false is not cooled seeker.
 	shape_table_data = 
 	{
@@ -172,7 +149,7 @@ local SA9M32M = {
 	},
 	
 	simple_IR_seeker = {
-		sensitivity		= 6000, --8000
+		sensitivity		= 8000, --8000
 		cooled			= false, --true
 		delay			= 0.0,
 		GimbLim			= math.rad(40),--30
@@ -182,11 +159,11 @@ local SA9M32M = {
 		flag_dist		= 150.0,
 		abs_err_val		= 3,
 		ground_err_k	= 3,
-		ccm_k0 			= 1.4, --1.0
+		ccm_k0 			= 2.0, --1.0
 	},
 	
 	simple_gyrostab_seeker = {
-		gimbal_lim = math.rad(40)
+		gimbal_lim = math.rad(40),
 		omega_max	= math.rad(8)
 	},
 	
@@ -216,7 +193,7 @@ declare_weapon(SA9M32M)
 GT_t.LN_t.strela2m = {}
 GT_t.LN_t.strela2m.type = 4
 GT_t.LN_t.strela2m.distanceMin = 800 --500
-GT_t.LN_t.strela2m.distanceMax = 4200 --4500
+GT_t.LN_t.strela2m.distanceMax = 8500 --Technically 4200 is Rmax, but it's a tail-chaser so 7400 is the estimated intercept distance.
 GT_t.LN_t.strela2m.reactionTime = 2;
 GT_t.LN_t.strela2m.launch_delay = 1;
 GT_t.LN_t.strela2m.maxShootingSpeed = 0

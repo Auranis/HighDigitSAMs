@@ -1,28 +1,4 @@
 -- Missile
-local function calcPiercingMass(warhead)
-	warhead.piercing_mass  = warhead.mass;
-	if (warhead.expl_mass/warhead.mass > 0.1) then
-		warhead.piercing_mass  = warhead.mass/5.0;
-	end
-end
-
-local function simple_aa_warhead(power, caliber) -- By Saint
-    local res = {};
-
-	res.caliber = caliber
-	res.mass = power; --old explosion damage effect
-    res.expl_mass = power;
-    res.other_factors = {1, 1, 1};
-    res.obj_factors = {1, 1};
-    res.concrete_factors = {1, 1, 1};
-    res.cumulative_factor = 0;
-    res.concrete_obj_factor = 0.0;
-    res.cumulative_thickness = 0.0;
-    
-	calcPiercingMass(res)
-    return res;
-end
-
 local SA9M32 = {
 	category		= CAT_MISSILES,
 	name			= "Strela-2",
@@ -38,22 +14,23 @@ local SA9M32 = {
 	Head_Type = 1,
 	sigma = {6, 6, 6},
 	M = 9.2, --10.3
-	H_max = 1500.0, --3000.0
+	H_max = 2000.0, --3000.0
 	H_min = 1.0,
 	Diam = 72.0,
 	Cx_pil = 1,
-	D_max = 3200.0, --4500.0
+	D_max = 6000.0, --Technically 3200 is Rmax, but it's a tail-chaser so 5200 is the estimated intercept 
+	-- for a target at 220 m/s. We'll allow a little wiggle room for operator error.
 	D_min = 800.0, --500.0
 	Head_Form = 0, --1
 	Life_Time = 14.0,
 	Nr_max = 4,
 	v_min = 70.0, --70.0
-	v_mid = 480.0, --570.0
-	Mach_max = 1.6, --1.6
+	v_mid = 380.0, --570.0
+	Mach_max = 1.2, --1.2
 	t_b = 0.0,
 	t_acc = 2.0,
 	t_marsh = 4.0,
-	Range_max = 3200.0, --4500.0
+	Range_max = 6000.0, 
 	H_min_t = 10.0,
 	Fi_start = math.rad(1),
 	Fi_rak = 3.14152,
@@ -64,26 +41,28 @@ local SA9M32 = {
 		mass					= 1.15, --1.25
 		expl_mass				= 0.37, --1.25
 		caliber					= 72,
-		other_factors			= { 1.325, 1.325, 1.325 },
+		other_factors			= { 1.325, 1.325, 1 },
 		obj_factors				= { 1.325, 1.325 },
 		concrete_factors		= { 1.325, 1.325, 1.0 },
 		cumulative_factor		= 0.0,
 		concrete_obj_factor		= 0.0,    
 		cumulative_thickness	= 0.0,
 		piercing_mass 			= 0.23, --1.25
+		fuel_dmg_coeff			= 0.48,
 		time_self_destruct		= 14,
 	},
 	warhead_air = {
 		mass					= 1.15, --1.25
 		expl_mass				= 0.37, --1.25
 		caliber					= 72,
-		other_factors			= { 1.325, 1.325, 1.325 },
+		other_factors			= { 1.325, 1.325, 1 },
 		obj_factors				= { 1.325, 1.325 },
 		concrete_factors		= { 1.325, 1.325, 1.0 },
 		cumulative_factor		= 0.0,
 		concrete_obj_factor		= 0.0,    
 		cumulative_thickness	= 0.0,
 		piercing_mass 			= 0.23, --1.25
+		fuel_dmg_coeff			= 0.48,
 		time_self_destruct		= 14,
 	},
 	X_back = -0.781,
@@ -92,8 +71,8 @@ local SA9M32 = {
 	Reflection = 0.01,
 	KillDistance = 0.5,
 	--seeker sensivity params
-	SeekerSensivityDistance = 6000, -- original value 8000 The range of target with IR value = 1. In meters.
-	ccm_k0 = 1.5,  -- original value 1.0 | Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
+	SeekerSensivityDistance = 5000, -- original value 8000 The range of target with IR value = 1. In meters.
+	ccm_k0 = 3.0,  -- original value 1.0 | Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)
 	SeekerCooled			= false, -- original value true | True is cooled seeker and false is not cooled seeker.
 	shape_table_data = 
 	{
@@ -172,7 +151,7 @@ local SA9M32 = {
 	},
 	
 	simple_IR_seeker = {
-		sensitivity		= 6000, --8000
+		sensitivity		= 5000, --8000
 		cooled			= false, --true
 		delay			= 0.0,
 		GimbLim			= math.rad(40),--30
@@ -182,11 +161,11 @@ local SA9M32 = {
 		flag_dist		= 150.0,
 		abs_err_val		= 3,
 		ground_err_k	= 3,
-		ccm_k0 			= 1.5, --1.0
+		ccm_k0 			= 3.0, --1.0
 	},
 	
 	simple_gyrostab_seeker = {
-		gimbal_lim = math.rad(40)
+		gimbal_lim = math.rad(40),
 		omega_max	= math.rad(8)
 	},
 	
@@ -216,7 +195,7 @@ declare_weapon(SA9M32)
 GT_t.LN_t.strela2 = {}
 GT_t.LN_t.strela2.type = 4
 GT_t.LN_t.strela2.distanceMin = 800 --500
-GT_t.LN_t.strela2.distanceMax = 3200 --4500
+GT_t.LN_t.strela2.distanceMax = 6000 --Technically 3200 is Rmax, but it's a tail-chaser so 6000 is the estimated intercept distance.
 GT_t.LN_t.strela2.reactionTime = 2;
 GT_t.LN_t.strela2.launch_delay = 1;
 GT_t.LN_t.strela2.maxShootingSpeed = 0
