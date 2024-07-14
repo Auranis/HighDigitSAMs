@@ -25,7 +25,8 @@ end
 
 local SA9M317 = {
 	Name = SA9M317, --9M317 Buk-M1-2
-	display_name = _('9M317 SA-17'),
+	display_name = _('9M317 Buk-M2 (SA-17 Grizzly)'),
+	display_name_short = _('9M317 Buk-M2 (SA-17 Grizzly)'),
 	name = "SA9M317",
 	Escort = 3,
 	Head_Type = 6,
@@ -40,7 +41,7 @@ local SA9M317 = {
 	Head_Form = 1,
 	Life_Time = 80.0,
 	Nr_max = 24,
-	v_min = 300.0,
+	v_min = 200.0,
 	v_mid = 900.0,
 	Mach_max = 3.8,
 	t_b = 0.0,
@@ -63,11 +64,12 @@ local SA9M317 = {
 	KillDistance = 13,
 	ccm_k0       = 0.5,
     PN_coeffs = {
-        3,                 -- Number of Entries
-        5000.0 ,1.0,       -- Less 5 km to target Pn = 1
+        4,                 -- Number of Entries
+		0, 1.0,
+        7408.0 ,1.0,       -- Less 7.4 km to target Pn = 1
         10000.0, 0.5,      -- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-        15000.0, 0.2
-    }; -- Between 15 and 8 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 15 km Pn = 0.2.
+    	25000.0, 0.3
+    }; -- Between 25 and 10 km  to target, Pn smoothly changes from 0.3 to 0.5. Longer then 25 km Pn = 0.3.
 	category = CAT_MISSILES,
 	wsTypeOfWeapon  = {wsType_Weapon,wsType_Missile,wsType_SA_Missile,WSTYPE_PLACEHOLDER};
 	shape_table_data = 
