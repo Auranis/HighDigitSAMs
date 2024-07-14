@@ -68,6 +68,8 @@ weapon_file("/Database/Weapon/9M82.lua")
 weapon_file("/Database/Weapon/9M83.lua")
 weapon_file("/Database/Weapon/9M342.lua")
 weapon_file("/Database/Weapon/9M36.lua")
+weapon_file("/Database/Weapon/9M32.lua")
+weapon_file("/Database/Weapon/9M32M.lua")
 
 --S-300PMU1
 
@@ -118,6 +120,8 @@ vehicle_file("/Database/Vehicle/5P73 V-601P LN.lua")
 
 vehicle_file("/Database/Vehicle/iglaS.lua")
 vehicle_file("/Database/Vehicle/Strela-3.lua")
+vehicle_file("/Database/Vehicle/Strela-2.lua")
+vehicle_file("/Database/Vehicle/Strela-2M.lua")
 
 -- Misc units
 
