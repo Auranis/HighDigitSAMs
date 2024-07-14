@@ -52,6 +52,17 @@ end
 
 --Russia
 dofile(current_mod_path.."/Database/Sensors/sensors.lua")
+dofile(current_mod_path..'/Database/Weapon/ASTER-30-1.lua')
+dofile(current_mod_path..'/Database/Weapon/ASTER-30-1NT.lua')
+dofile(current_mod_path..'/Database/Weapon/ASTER-30-2.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_MLT_Blk1.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_MLT_Blk1NT.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_MLT_Blk2.lua')
+dofile(current_mod_path..'/Database/Vehicle/radar/SAMPT_MRI_ARABEL.lua')
+dofile(current_mod_path..'/Database/Vehicle/radar/SAMPT_MRI_GF300.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_MC.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_ME.lua')
+dofile(current_mod_path..'/Database/Vehicle/SAMPT_MGE.lua')
 
 
 -- Weapon files
