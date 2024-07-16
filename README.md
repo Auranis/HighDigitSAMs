@@ -69,10 +69,18 @@ The 9K34 system was a major improvement over the previous 9K32 Strela-2, featuri
 It saw service around the world from the late 1970s onward.  
 Selectable in the mission editor as the SAM SA-14 Strela-3.  
 
+### 9K32 and 9K32M Strela-2 (SA-7 and SA-7B) MANPADS
+The 9K32 system was the first man-portable SAM system to enter serial production in the Soviet Union, starting in 1970.  
+Both versions are rear-aspect only, with the SA-7B featuring an improved seeker, warhead, and rocket motor.  
+For mission makers: use Average skill level and face the units away from the expected threat axis, so that they will have the best shot parameters.  
+
 # Version history
 
-#### V whatevernumberisnext 2024-05-18
-SAMP/T Block 1, 1NT and 2 with the necessary vehicles
+#### V 2.1.0 2024-07-15 -  
+Added SAMP/T Block 1, 1NT and 2 with the necessary vehicles (3D models by ERO and zahnatom, Lua by zahnatom)
+Added SA-7 and SA-7B by Des-mundo
+Incorporated 48N6 guidance improvements by YoloWingPixy - 48N6 variants should guide more like the vanilla 5V55, with a more parabolic arc
+Added "12" HARM code for the S-300VM (SA-23) TR - Thanks to YoloWingPixy
 
 #### V 2.0.0 2023-11-04 -  
 Removed KS-19, Fire Can, S-300PS as they have become obsolete with recent DCS changes  

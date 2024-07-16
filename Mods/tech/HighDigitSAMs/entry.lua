@@ -5,7 +5,7 @@ displayName   = _("High Digit SAMs"),
 shortName	  =   "HighDigitSAMs",
 state		 	  = "installed",
 developerName	  = "E. 'Wiki' Crouch",
-version		 	  = "2.0.0",	
+version		 	  = "2.1.0",	
 info		  =    _("Adds various modern and historical air defense units to DCS world."),	 
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
