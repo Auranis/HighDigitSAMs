@@ -17,19 +17,19 @@ SAMPT_ASTER_30_Blk_2 = {
     H_min 			= 20000.0,
     Diam 			= 450.0,
     Cx_pil 			= 1,
-    D_max 			= 200000.0,
+    D_max 			= 100000.0,
     D_min 			= 10000.0,
     Head_Form 		= 1,
     Life_Time 		= 360.0,
     Nr_max 			= 75,
     v_min 			= 50.0,
     v_mid 			= 5000.0,
-    Mach_max 		= 10.0,
+    Mach_max 		= 9.0,
     t_b 			= 0.0,
-    t_acc 			= 10.0,
-    t_marsh 		= 30.0,
+    t_acc 			= 15.0,
+    t_marsh 		= 25.0,
     Range_max 		= 200000.0,
-    H_min_t 		= 5000.0,
+    H_min_t 		= 15000.0,
     Fi_start     	= 3.14152, -- angle of tracking at firing
     Fi_rak       	= 3.14152,
     Fi_excort    	= 2.0,
@@ -44,19 +44,18 @@ SAMPT_ASTER_30_Blk_2 = {
     Y_back_acc 	 	= 0.0,
     Z_back_acc 	 	= 0.0,	
     Reflection 		= 0.1,
-    KillDistance 	= 25.0,
+    KillDistance 	= 15.0,
 	tail_scale 	 	= 1.4,		
 	ccm_k0 			= 0.1,	
 	
 	active_radar_lock_dist	= 200000.0,
 	go_active_by_default	= 0,	
 
-	PN_coeffs = {3, 				-- Number of Entries
-				50000.0 ,1.0,		-- Less 5 km to target Pn = 1
-				100000.0, 0.8,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
-				200000.0, 0.5};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
+	PN_coeffs = {2, 				-- Number of Entries
+				50000.0 ,1.0,		-- Less 50 km to target Pn = 1
+				200000.0, 1.0};	
 
-	warhead = enhanced_a2a_warhead(75.0); 
+	warhead = enhanced_a2a_warhead(15.0); 
 
     shape_table_data = {
         {
@@ -81,7 +80,7 @@ GT_t.LN_t.Aster30_2.distanceMin = 10000;
 GT_t.LN_t.Aster30_2.distanceMax = 200000;
 GT_t.LN_t.Aster30_2.min_trg_alt = 20000;
 GT_t.LN_t.Aster30_2.max_trg_alt = 70000;
-GT_t.LN_t.Aster30_2.reactionTime = 1.0;
+GT_t.LN_t.Aster30_2.reactionTime = 6.0;
 GT_t.LN_t.Aster30_2.launch_delay = 0.1;
 GT_t.LN_t.Aster30_2.reflection_limit = 0.0001;
 GT_t.LN_t.Aster30_2.ECM_K = 0.1
